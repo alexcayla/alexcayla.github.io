@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<ul>
+{%for deliverable in site.deliverables%}
+  <li>
+    <a href="{{deliverable.url}}">{{deliverable.name}}</a>
+  </li>
+{%endfor%}
+</ul>

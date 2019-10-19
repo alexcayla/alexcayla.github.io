@@ -1,0 +1,99 @@
+{% include head.html %}
+
+<div class="nav-home nav">
+  <!-- <a href="/services">Services</a> -->
+  <a href="/projects">Projects</a>
+  <a href="">Writings</a>
+  <a href="">Contact</a>
+</div>
+
+<section class="hero">
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="hero-font" id="alexandre">ALEXANDRE</div>
+    </div>
+
+    <div class="row">
+      <div class="hero-font col-7">CAYLA</div>
+
+      <div class="col-4 test">
+        <h1 class="subhead ">Digital product development and growth</h1>
+      </div>
+
+  </div>
+</section>
+
+<section class="me">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img src="/assets/moi.png" alt="Alexandre Cayla" class="img-fluid img-test">
+        </div>
+        <div class="col-9" id="overlap">
+          {{content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="container-fluid">
+  <div class="container">
+    <h2>Product Development</h2>
+    <!-- <div class="row"> -->
+
+      {{site.services | where: 'name', 'dev-intro'}}
+
+      {% assign development_services = site.services | where: 'category', 'development' | sort: 'order'%}
+
+      {% for service in development_services %}
+        <h3>{{ service.name | capitalize }}</h3>
+        <p>{{service.content}}</p>
+        <h4>Common deliverables</h4>
+
+        {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
+
+        <div class="delibs my-4">
+
+          {% for deliverable in deliverables%}
+
+            <div class="card-deliverable">
+
+              <div class="card-header"><a href="{{deliverable.url}}">{{deliverable.name | capitalize}}</a></div>
+              <div class="card-body">{{deliverable.description}}</div>
+            </div>
+
+          {%endfor%}
+
+        </div>
+
+        <!-- {% for deliverable in deliverables %}
+          {{deliverable.name}}
+        {%endfor%} -->
+
+      {% endfor%}
+    <!-- </div> -->
+  </div>
+</section>
+<section class="container-fluid">
+  <div class="container">
+    <h2>Product Growth</h2>
+    {{site.services | where: 'name', 'growth-intro'}}
+
+    {% assign growth_services = site.services | where: 'category', 'growth'%}
+      {% for service in growth_services %}
+        <h3>{{ service.name | capitalize }}</h3>
+        <p>{{service.content}}</p>
+      {% endfor%}
+  </div>
+</section>
+
+<section class="container my-4">
+  <div class="btn btn-primary">Get in touch</div>
+</section>
+
+
+{% include footer.html %}

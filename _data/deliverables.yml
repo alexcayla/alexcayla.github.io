@@ -1,0 +1,83 @@
+# Growth
+- name: Porto-personas
+  description: A high-level description of buyers, users and other important customers looking to buy your product
+  services:
+    - clarify
+
+- name: Jobs Map
+  description: List of “Jobs-to-be-done” for which your customers “hire” your product
+  services:
+    - growth
+
+- name: Product requirement document
+  description: Outline of the core components of the product, who it is for and how users are expected to use it
+  services:
+    - growth
+
+- name: Digital strategy
+  description: High-level outline of how and where customers should be reached
+  services:
+    - growth
+
+
+# Structure
+
+- name: Product Marketing Roadmap
+  description: Document outlining the main marketing activities for the coming months
+  services:
+    - structure
+
+- name: Content Strategy
+  description: outlining how to communicate with customers, using which channels, types of content as well as the expected results
+  services:
+    - structure
+
+- name: Campaign briefs
+  description: Document that is created for every marketing activity. Outlines the target, the objectives, the dependencies as well as the objectives
+  services:
+    - structure
+
+- name: Digitial analytics tracking implementation
+  description: Implementation and configuration of the analytics tools of your choice
+  services:
+    - analytics
+
+- name: Campaign tracking guide
+  description: Guide with guidelines on how to tag campaigns, what to watch out for, etc
+  services:
+    - analytics
+
+- name: Dashboards and automated reports
+  description: Dashboards and reports automatically delivered to your team on a daily, weekly or monthly basis
+  services:
+    - analytics
+
+- name: Mock ups and components
+  description:
+  services:
+    - design
+
+- name: Customer Journeys and user flows
+  description:
+  services:
+    -design
+
+- name: Wireflows
+  description: Wireflows are a high level representation
+  services:
+    -
+
+- name: Style guides
+  description: Style guides are the look and feel pof all your app’s components.
+  services:
+    - design
+
+
+# Develop
+- name: schema
+  description: a schema
+  services:
+    - development
+
+
+

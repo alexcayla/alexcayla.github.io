@@ -1,0 +1,33 @@
+# Settings. Need to restart server to take effect.
+
+title: Alexandre Cayla
+email: hello@alexcayla.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Alexandre Cayla, Product development and growth
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.alexcayla.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: alexcayla
+github_username:  alexcayla
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-toc
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+permalink: pretty
+
+collections:
+  deliverables:
+    output: true
+  services:
+    output: true
+  projects:
+    output: true
+
+exclude: []
+
