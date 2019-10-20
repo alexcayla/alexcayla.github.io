@@ -1,6 +1,6 @@
 ---
 name: schema
-description: Visual representation of the database and the relationship between tables. 
+description: Map all tables in a database and the relationship between them.
 order: 3
 category: development
 services:

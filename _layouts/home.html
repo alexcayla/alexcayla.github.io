@@ -42,7 +42,7 @@
 
 <section id="services" class="container-fluid">
   <div class="container">
-    <h2>Product Development</h2>
+    <h2 id="development">Product Development</h2>
     <!-- <div class="row"> -->
 
       {{site.services | where: 'name', 'dev-intro'}}
@@ -52,7 +52,7 @@
       {% for service in development_services %}
         <h3>{{ service.name | capitalize }}</h3>
         <p>{{service.content}}</p>
-        <h4>Common deliverables</h4>
+        <h4>What you get</h4>
 
         {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
 
@@ -80,14 +80,37 @@
 </section>
 <section class="container-fluid">
   <div class="container">
-    <h2>Product Growth</h2>
+
+    <h2 id="growth">Product Growth</h2>
+
     {{site.services | where: 'name', 'growth-intro'}}
 
     {% assign growth_services = site.services | where: 'category', 'growth'%}
+
       {% for service in growth_services %}
+
         <h3>{{ service.name | capitalize }}</h3>
+
         <p>{{service.content}}</p>
+
+        <h4>What you get</h4>
+
+        {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
+
+        <div class="delibs my-4">
+
+          {% for deliverable in deliverables%}
+
+            <div class="card-deliverable">
+
+              <div class="card-header"><a href="{{deliverable.url}}">{{deliverable.name | capitalize}}</a></div>
+              <div class="card-body">{{deliverable.description}}</div>
+            </div>
+
+          {%endfor%}
+        </div>
       {% endfor%}
+
   </div>
 </section>
 

@@ -1,7 +1,11 @@
 ---
-name: Campaign briefs
-description: Document that is created for every marketing activity. Outlines the target, the objectives, the dependencies as well as the objectives
-category: growth
+name: proto-personas
+description: Create high-level descriptions of target users with their goals and pain points
+category: 
+    - growth
+    - development
+order: 2
 services:
-    - structure
+    - clarify
+    - design 
 ---
