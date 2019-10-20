@@ -4,7 +4,7 @@ description: Create high-level descriptions of target users with their goals and
 category: 
     - growth
     - development
-order: 2
+order: 4
 services:
     - clarify
     - design 

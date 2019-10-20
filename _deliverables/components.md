@@ -1,6 +1,6 @@
 ---
 name: Components
-description: List all UI elements that will be used to build interfaces (as tables, buttons, cards, etc). 
+description: Catalogue all UI elements that will be used to build interfaces, such as tables, buttons, cards, etc, with their code.
 order: 3
 category: development
 services:
