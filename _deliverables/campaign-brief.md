@@ -1,7 +1,8 @@
 ---
 name: Campaign briefs
-description: Document that is created for every marketing activity. Outlines the target, the objectives, the dependencies as well as the objectives
+description: Summarize the target, objectives, dependencies as well as the objectives of a campaign or activity
 category: growth
+order: 2
 services:
     - structure
 ---

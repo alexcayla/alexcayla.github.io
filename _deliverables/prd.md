@@ -4,6 +4,5 @@ description: Distill the product features, functionality and purpose in a single
 order: 1
 category: development
 services:
-    - development
-    - clarify
+    - design
 ---

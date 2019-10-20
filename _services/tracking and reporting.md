@@ -3,9 +3,8 @@ name: track
 category: growth
 ---
 
+Everyone claims to be data-driven. Yet, very few people are. 
 
-Another important part of structure is tracking. _E. g._ ensuring that the team has the ability to answer most questions it has about it's performance.
+This is quite understandable: as digital channels multiply, people have to contend with app analytics, page analytics, social media analytics, tag managers, campaign tracking, etc. In short, things become very complicated, very quickly.
 
-Sadly, with app analytics, page analytics, social media analytics, tag managers, campaign tracking, things can become complicated very quickly.
-
-So you don't have to worry about your data all the time, I can architect and implement your analytics infrastructure and create dashboards and automated reports so you can focus on what really matters. 
+To ensure that you can answer your most pressing questions, I architect and implement your analytics infrastructure, create dashboards and reports and provide instructions on how to properly tag and track your camapigns. 
