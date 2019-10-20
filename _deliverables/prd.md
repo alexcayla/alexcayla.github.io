@@ -1,8 +1,9 @@
 ---
-name: product requirement document
-description: Breakdown of the product into features, functionality and purpose
+name: Product requirement document
+description: Distill the product features, functionality and purpose in a single document
 order: 1
 category: development
 services:
     - development
+    - clarify
 ---

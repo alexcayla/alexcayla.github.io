@@ -3,11 +3,10 @@ layout: default
 permalink: deliverables/user-flows
 name: User flows
 order: 1
-description: Paths taken by the user from their entry point until they achieve a successful outcome such as purchasing a product.
+description: Map the paths taken by users to achieve a successful outcome in your app. For example, launching a campaign. 
 categoty:
 services:
     - design
-    - clarify
 ---
 
 test

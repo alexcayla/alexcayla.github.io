@@ -9,11 +9,12 @@ livereload: true
 
 Hi, I'm Alex! 
 
-I [build compelling digital products](#development) and [help SaaS companies grow](#growth).
+I [build compelling digital products](#development) and [help SaaS companies grow](#growth), I (sometimes) teach and I maintain a [couple of projects](/projects) for fun and profit.
 
-I also co-organize product events in Montreal, Canada ([Product Circle](https://www.meetup.com/Product-Circle-Montreal/), [Product Tank](https://www.meetup.com/ProductTank-Montreal/)), I sometimes teach and I maintain a [couple of projects]() for fun and profit.
 
-Regardless of the project, I always start from the customers and their needs. So, if you are looking for Facebook hacks, Google Ads tips and tricks, or quick optimization schemes, I won't be your guy. 
+In Montreal, I co-organize product events ([Product Circle](https://www.meetup.com/Product-Circle-Montreal/), [Product Tank](https://www.meetup.com/ProductTank-Montreal/)) and have a podcast on digital product development (on hiatus), [prod.](www.leprodcast.com)
+
+I obssess about user wants and needs and how to the best possibly fulfill them. Happily, I found that understanding customers tends to help products succeed and grow.
 
 If that is what you are looking for, you can learn more about my services below, or [just get in touch](/contact). 
 
