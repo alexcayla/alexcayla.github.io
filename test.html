@@ -1,0 +1,66 @@
+---
+
+---
+<head>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <style>
+    @font-face {
+       font-family: 'Stellar';
+       font-weight: bold;
+        src: url('/assets/fonts/Stellar-Bold.otf');
+    }
+
+    .logo-header {
+      display: grid;
+      width: 100vw;
+      overflow: hidden;
+      background-color: #0e5f4c;
+    }
+
+    #first-name {
+          font-size: 21.5vw;
+          font-family: 'Stellar';
+          line-height: 0.8;
+          grid-row: 1;
+          grid-column: 1/12;
+    }
+
+    #last-name {
+      font-size: 21.5vw;
+      font-family: 'Stellar';
+      line-height: 0.8;
+      grid-row: lastn;
+      grid-column: 1/8;
+    }
+
+    #tagline {
+      font-size: 6vw;
+      font-family: 'Stellar';
+      grid-row: 2;
+      grid-column: 8/12;
+      line-height: 1;
+      position: relative;
+      top: 50px;
+    }
+
+    #space {
+      grid-row: 4;
+      height: 50px;
+      grid-column: 1/12;
+      background-color: white;
+    }
+
+
+  </style>
+</head>
+
+
+<div class="logo-header">
+  <div id="first-name">ALEXANDRE</div>
+  <div id="last-name">CAYLA</div>
+  <div id="tagline">Digital product development and growth</div>
+  <div id="space">space</div>
+</div>
+
+{% include footer.html %}
