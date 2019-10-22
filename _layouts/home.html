@@ -1,48 +1,50 @@
 {% include head.html %}
 
-<div class="nav-home nav">
-  <!-- <a href="/services">Services</a> -->
-  <a href="/projects">Projects</a>
-  <a href="">Writings</a>
-  <a href="">Contact</a>
+<div class="logo-header">
+  <div id="first-name">ALEXANDRE</div>
+  <div id="last-name">CAYLA</div>
+  <div id="tagline">
+    <div>
+      Digital product <span style="color:#cbfe07;">development</span> <br> and growth
+    </div>
+  </div>
 </div>
 
-<section class="hero">
 
-  <div class="container-fluid">
-
-    <div class="row">
-      <div class="hero-font" id="alexandre">ALEXANDRE</div>
-    </div>
-
-    <div class="row">
-      <div class="hero-font col-7">CAYLA</div>
-
-      <div class="col-4 test">
-        <h1 class="subhead ">Digital product development and growth</h1>
-      </div>
-
+<div id="nav-home" class="container-fluid">
+  <div>
+    <a href="/projects">Projects</a>
+    <a href="/blog">Writing</a>
+    <a href="/contact" class="active">Get in touch</a>
   </div>
-</section>
+</div>
 
 <section class="me">
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <div class="col-4">
           <img src="/assets/moi.png" alt="Alexandre Cayla" class="img-fluid img-test">
         </div>
-        <div class="col-9" id="overlap">
-          {{content}}
+        <div class="col-8 d-flex align-items-end">
+          <div>
+            {{content}}
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<div id="product-dev-header">
+  <div class="container">
+      <h2 id="development">{{'Product Development' | upcase}} </h2>
+  </div>
+</div>
+
 <section id="services" class="container-fluid">
   <div class="container">
-    <h2 id="development">Product Development</h2>
+
     <!-- <div class="row"> -->
 
       {{site.services | where: 'name', 'dev-intro'}}
@@ -51,37 +53,39 @@
 
       {% for service in development_services %}
         <h3>{{ service.name | capitalize }}</h3>
-        <p>{{service.content}}</p>
-        <h4>What you get</h4>
 
+        <p>{{service.content}}</p>
+
+        <h4>What you get</h4>
         {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
 
         <div class="delibs my-4">
 
           {% for deliverable in deliverables%}
-
             <div class="card-deliverable">
-
-              <div class="card-header"><a href="{{deliverable.url}}">{{deliverable.name | capitalize}}</a></div>
-              <div class="card-body">{{deliverable.description}}</div>
+              <div class="card card-body">
+                <div><strong>{{deliverable.name | capitalize}}</strong></div>
+                <div>{{deliverable.description}}</div>
+              </div>
             </div>
-
           {%endfor%}
 
         </div>
 
-        <!-- {% for deliverable in deliverables %}
-          {{deliverable.name}}
-        {%endfor%} -->
-
       {% endfor%}
-    <!-- </div> -->
   </div>
 </section>
+
+
+<!-- Product growth -->
+<div id="product-growth-header">
+  <div class="container">
+    <h2 id="growth">{{'Product Growth' | upcase}}</h2>
+  </div>
+</div>
 <section class="container-fluid">
   <div class="container">
 
-    <h2 id="growth">Product Growth</h2>
 
     {{site.services | where: 'name', 'growth-intro'}}
 
@@ -91,23 +95,22 @@
 
         <h3>{{ service.name | capitalize }}</h3>
 
-        <p>{{service.content}}</p>
+          <p>{{service.content}}</p>
 
         <h4>What you get</h4>
-
         {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
 
         <div class="delibs my-4">
 
           {% for deliverable in deliverables%}
-
             <div class="card-deliverable">
-
-              <div class="card-header"><a href="{{deliverable.url}}">{{deliverable.name | capitalize}}</a></div>
-              <div class="card-body">{{deliverable.description}}</div>
+              <div class="card card-body">
+                <div><strong>{{deliverable.name | capitalize}}</strong></div>
+                <div>{{deliverable.description}}</div>
+              </div>
             </div>
-
           {%endfor%}
+
         </div>
       {% endfor%}
 

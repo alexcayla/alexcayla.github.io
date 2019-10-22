@@ -1,13 +1,31 @@
+// Imports
+
 @font-face {
-  font-family: 'Stellar';
+  font-family: 'Stellar Bold';
   src: url('/assets/fonts/Stellar-Bold.otf');
+  font-weight: bold;
 }
+
+@font-face {
+  font-family: 'Stellar Light';
+  src: url('/assets/fonts/Stellar-light.otf');
+  font-weight: light;
+}
+
+@font-face {
+  font-family: 'Akzidenz';
+  src: url('/assets/fonts/AkzidenzGrotesk-BoldCond.otf');
+  font-weight: bold;
+}
+
+// Variables
 
 $light:  #f8f9fa;
 $red:    #dc3545;
 $green: #0e5f4c;
+$black: #011109;
 
-$heading-font: "Stellar";
+$heading-font: "Stellar Bold";
 
 $body-bg: $light;
 // $body-color: $red;
@@ -16,41 +34,111 @@ $body-bg: $light;
 $custom-font-size: 20px;
 $homepage-font: 1.25rem;
 
+// Styles
 
-h1, h2, h3, h4 {
+h1, h2 {
   font-family: $heading-font;
+  color: $black;
 }
 
-.hero {
-  background: linear-gradient($green 75%, transparent 20%) no-repeat;
+h3, h4 {
+  font-family: 'Akzidenz';
+  color: $black;
 }
 
-.hero-font {
-  font-size: 22vw;
-  font-family: $heading-font;
+// Hero
+
+.logo-header {
+  display: grid;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(#0e5f4c 80%, transparent 20%) no-repeat
+}
+
+#first-name {
+  font-size: 21.5vw;
+  font-family: 'Stellar Bold';
+  line-height: 0.8;
+  grid-row: 1;
+  grid-column: 1/12;
+}
+
+#last-name {
+  font-size: 21.5vw;
+  font-family: 'Stellar Bold';
+  line-height: 0.8;
+  grid-row: lastn;
+  grid-column: 1/8;
+  position: relative;
+}
+
+#tagline {
+  font-size: 6vw;
+  font-family: 'Akzidenz';
+  grid-row: 2;
+  grid-column: 8/12;
+  position: relative;
+  vertical-align: text-bottom;
+  text-transform: uppercase;
   line-height: 0.8;
 }
 
-#alexandre {
-  overflow: hidden
+// ------------------
+// |    HOME NAV    |
+// ------------------
+
+ #nav-home {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    color: black;
+    font-family: 'Stellar Light';
+    font-size: 2.5rem;
+    padding: 20px 50px 20px 50px;
+    width: 100%;
+    &:hover, &.active {
+      text-decoration: none;
+      background-image: url('/assets/ellipse.png');
+      background-position: center;
+      background-size: cover;
+    }
+    &:last-child {
+      margin-right: 1em;
+    }
+  }
 }
 
-.subhead {
-  font-size: 4vw;
-  font-family: $heading-font;
-  color: $light;
-  // display: inline-block;
-  padding: 0;
-}
 
-.hero > .container-fluid > .row > .col-7 {
-  padding-right: 0;
-  padding-left: 0;
-}
+// .hero {
+//   background: linear-gradient($green 75%, transparent 20%) no-repeat;
+// }
+
+// .hero-font {
+//   font-size: 22vw;
+//   font-family: $heading-font;
+//   line-height: 0.8;
+// }
+
+// #alexandre {
+//   overflow: hidden
+// }
+
+// .subhead {
+//   font-size: 4vw;
+//   font-family: $heading-font;
+//   color: $light;
+//   // display: inline-block;
+//   padding: 0;
+// }
+
+// .hero > .container-fluid > .row > .col-7 {
+//   padding-right: 0;
+//   padding-left: 0;
+// }
 
 .me {
-  margin-top: 5em;
   font-size: $homepage-font;
+  margin: 5em 0 5em 0;
 }
 
 .test {
@@ -77,31 +165,58 @@ h1, h2, h3, h4 {
 }
 
 #services {
-  padding-top: 130px;
-  background-color: $red;
+  // padding-top: 130px;
+  background-color: $green;
   // height: 200px;
   font-size: $homepage-font;
   color: $light;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-}
+  padding-bottom: 60px;
 
-.nav-home {
-  z-index: 1;
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  font-weight: 700;
-  position: fixed;
-  opacity: 0.6;
-  width: 100%;
-  background-color: $light;
-  a {
-    color: $green;
-    margin-right: 10px;
-    opacity: 1;
+  h3 {
+    font-size: 2.5rem;
   }
 }
+
+
+#product-dev-header {
+  background: linear-gradient(transparent 50%, #0e5f4c 50%) no-repeat;
+
+  h2{
+    font-size: 5rem;
+    color: $black;
+    margin-bottom: 0;
+  }
+}
+
+#product-growth-header {
+  background: linear-gradient(#0e5f4c 50%, transparent 50%) no-repeat;
+
+  h2{
+    font-size: 5rem;
+    color: $black;
+    margin-bottom: 0;
+  }
+}
+
+
+// ** HOME NAV **
+// --------------
+// .nav-home {
+//   z-index: 1;
+//   display: flex;
+//   justify-content: flex-end;
+//   padding: 10px;
+//   font-weight: 700;
+//   position: fixed;
+//   opacity: 0.6;
+//   width: 100%;
+//   background-color: $light;
+//   a {
+//     color: $green;
+//     margin-right: 10px;
+//     opacity: 1;
+//   }
+// }
 
 .nav-global {
   background: linear-gradient($green 75%, transparent 20%) no-repeat;
@@ -122,7 +237,7 @@ h1, h2, h3, h4 {
 
 .nav-items {
   font-family: $heading-font;
-  font-weight: light;
+  font-weight: $light;
   padding: 7px;
   a {
     margin-left: 10px;
@@ -140,8 +255,7 @@ h1, h2, h3, h4 {
   min-width: 250px;
   max-width: 250px;
   margin-right: 15px;
-  background-color: $light;
-  color: black;
+  // box-shadow: 4px 6px 8px 2px rgba(203,254,5,1);
 }
 
 .footer {
@@ -154,15 +268,14 @@ h1, h2, h3, h4 {
 
 }
 
-.card-header {
-  font-family: $heading-font;
-  height: 60px;
-  line-height: 1;
+.card {
+  color: $black;
+  font-size: 1rem;
+  height: 100%;
+  border-radius: 3px;
 }
 
 .card-body {
-  color: black;
-  font-size: 1rem;
 }
 
 .delibs {
