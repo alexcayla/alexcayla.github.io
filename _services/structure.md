@@ -3,12 +3,6 @@ name: structure
 category: growth
 ---
 
-Structure is about connecting intent to action. About organizing marketing activities so that teams know what to do, what to look out for and what to take away from failed experiments. In short, good structure connects the _what_ to the _how_.
+Structure is about connecting the _what_ to the _how_. Once you know who you want to reach and where, in order to improve, you will need to keep track of what was a campaign's expected outcome and what to do if it fails. 
 
-There are multiple benefits to having well structured marketing activities: 
-* Increased velocity
-* Increased effectiveness
-* Increased confidence
-
-
-What are the questions for structure? 
+I help by establishing the steps that need to be carried out when planning a growth activity, by documenting growth activities and by carrying out campaigns with internal teams.

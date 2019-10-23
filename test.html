@@ -1,0 +1,115 @@
+---
+
+---
+<head>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <style>
+    @font-face {
+       font-family: 'Stellar Bold';
+       src: url('/assets/fonts/Stellar-Bold.otf');
+       font-weight: bold;
+    }
+
+    @font-face {
+      font-family: 'Stellar Light';
+      src: url('/assets/fonts/Stellar-light.otf');
+      font-weight: light;
+    }
+
+    @font-face {
+      font-family: 'Akzidenz';
+      src: url('/assets/fonts/AkzidenzGrotesk-BoldCond.otf');
+      font-weight: bold;
+    }
+
+    .logo-header {
+      display: grid;
+      width: 100vw;
+      overflow: hidden;
+      background: linear-gradient(#0e5f4c 80%, transparent 20%) no-repeat
+    }
+
+    #first-name {
+      font-size: 21.5vw;
+      font-family: 'Stellar';
+      line-height: 0.8;
+      grid-row: 1;
+      grid-column: 1/12;
+    }
+
+    #last-name {
+      font-size: 21.5vw;
+      font-family: 'Stellar';
+      line-height: 0.8;
+      grid-row: lastn;
+      grid-column: 1/8;
+      position: relative;
+    }
+
+    #tagline {
+      font-size: 6vw;
+      font-family: 'Akzidenz';
+      grid-row: 2;
+      grid-column: 8/12;
+      position: relative;
+      /*margin-top: 10px;*/
+      vertical-align: text-bottom;
+      text-transform: uppercase;
+      line-height: 0.8;
+      /*display: flex;*/
+      /*align-items: flex-end;*/
+    }
+
+    #space {
+      grid-row: 4;
+      height: 250px;
+      grid-column: 1/12;
+      background-color: white;
+      margin-top: -130px;
+    }
+
+    #nav-home {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #nav-home a {
+      margin-right: 15px;
+      color: black;
+      font-family: 'Stellar Light';
+      font-size: 2.5rem;
+    }
+
+
+  #body {
+    height: 100vh;
+  }
+  </style>
+</head>
+
+
+<div class="logo-header">
+  <div id="first-name">ALEXANDRE</div>
+  <div id="last-name">CAYLA</div>
+  <div id="tagline">
+    <div>
+      Digital product <span style="color:#cbfe07;">development</span> <br> and growth
+    </div>
+  </div>
+</div>
+
+
+<div id="nav-home" class="container-fluid">
+    <a href="/projects">Projects</a>
+    <a href="/projects">Writing</a>
+    <a href="/projects">Get in touch</a>
+</div>
+
+
+<div id="body" class="container">
+
+</div>
+
+
+{% include footer.html %}
