@@ -32,7 +32,7 @@
 <div class="logo-header">
   <div id="first-name">ALEXANDRE</div>
   <div id="last-name">CAYLA</div>
-  <div id="tagline">
+  <div id="tagline" class="d-flex align-items-center">
     <div>
       Digital product <span style="color:#cbfe07;">development</span> <br> and growth
     </div>
@@ -40,30 +40,33 @@
 </div>
 
 
-<div id="nav-home" class="container-fluid">
-  <div>
-    <a href="/projects">Projects</a>
-    <a href="/blog">Writing</a>
-    <a href="/contact" class="active">Get in touch</a>
+<div id="nav-home" class="container mt-4">
+  <div class="home-nav-item">Bio</div>
+  <div class="d-flex">
+    <div><a href="#" class="home-nav-item">Projects</a></div>
+    <div><a href="#" class="home-nav-item">Writing</a></div>
+    <div><a href="/contact" class="home-nav-item">Get in touch</a></div>
   </div>
 </div>
+<div class="container">
+  <div id="line" class="container"></div>
+  <div id="arrow-down"></div>
+</div>
+
 
 <section class="me">
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-4">
-          <img src="/assets/moi.png" alt="Alexandre Cayla" class="img-fluid img-test">
-        </div>
         <div class="col-8 d-flex align-items-end">
           <div>
             <!-- # Product development and growth -->
 
-<p>Hi, I’m Alex!</p>
+<h1 id="hi-im-alex">Hi, I’m Alex!</h1>
 
 <p>I <a href="#development">build compelling digital products</a> and <a href="#growth">help SaaS companies grow</a>, I (sometimes) teach and I maintain a <a href="/projects">couple of projects</a> for fun and profit.</p>
 
-<p>In Montreal, I co-organize product events (<a href="https://www.meetup.com/Product-Circle-Montreal/">Product Circle</a>, <a href="https://www.meetup.com/ProductTank-Montreal/">Product Tank</a>) and have a podcast on digital product development (on hiatus), <a href="www.leprodcast.com">prod.</a></p>
+<p>In Montreal, I co-organize product events (<a href="https://www.meetup.com/Product-Circle-Montreal/" target="_blank">Product Circle</a>, <a href="https://www.meetup.com/ProductTank-Montreal/" target="_blank">Product Tank</a>) and have a podcast on digital product development (on hiatus), <a href="http://www.leprodcast.com" target="_blank">prod.</a></p>
 
 <p>I obssess about user wants and needs and how to the best possibly fulfill them. Happily, I found that understanding customers tends to help products succeed and grow.</p>
 
@@ -72,18 +75,25 @@
 
           </div>
         </div>
+        <div class="col-4">
+          <img src="/assets/moi.png" alt="Alexandre Cayla" class="img-fluid img-test">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div id="product-dev-header">
-  <div class="container">
-      <h2 id="development">PRODUCT DEVELOPMENT </h2>
+
+<!-- Product development -->
+
+<div class="container-fluid" id="product-dev-header-background">
+  <div class="container" id="product-dev-header">
+      <h2 id="development">PRODUCT DEVELOPMENT</h2>
+      <div class="heading-outline"><h2>PRODUCT DEVELOPMENT</h2></div>
   </div>
 </div>
 
-<section id="services" class="container-fluid">
+<section id="services-dev" class="container-fluid services">
   <div class="container">
 
     <!-- <div class="row"> -->
@@ -94,7 +104,7 @@
       
 
       
-        <h3>Design</h3>
+        <h3>DESIGN</h3>
 
         <p><p>Design is not how something looks, but how it works.</p>
 
@@ -104,50 +114,62 @@
 
 </p>
 
-        <h4>What you get</h4>
+        <h4>WHAT YOU GET</h4>
         
 
-        <div class="delibs my-4">
+        <div class="delibs mb-4">
 
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Product requirement document</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Product requirement document</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Distill the product features, functionality and purpose in a single document</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>User flows</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>User flows</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Map the paths taken by users to achieve a successful outcome in your app. For example, launching a campaign.</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Mock ups</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Mock ups</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Design a simplified version of your app in order to identify it's core components and understand how they related to one another.</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Components</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Components</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Catalogue all UI elements that will be used to build interfaces, such as tables, buttons, cards, etc, with their code.</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Proto-personas</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Proto-personas</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Create high-level descriptions of target users with their goals and pain points</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Jobs map</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Jobs map</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Group “Jobs-to-be-done” for which your customers “hire” your product</div>
               </div>
             </div>
@@ -156,7 +178,7 @@
         </div>
 
       
-        <h3>Development</h3>
+        <h3>DEVELOPMENT</h3>
 
         <p><p>Development is quite straightforward: I build your app.</p>
 
@@ -165,29 +187,35 @@
 <p>As a result, in addition to the code and app, you get documents that allow you continue to build and grow your product.</p>
 </p>
 
-        <h4>What you get</h4>
+        <h4>WHAT YOU GET</h4>
         
 
-        <div class="delibs my-4">
+        <div class="delibs mb-4">
 
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Product backlog</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Product backlog</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Document the work that needs to be done to create and grow the product</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Components</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Components</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Catalogue all UI elements that will be used to build interfaces, such as tables, buttons, cards, etc, with their code.</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Schema</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Schema</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Map all tables in a database and the relationship between them.</div>
               </div>
             </div>
@@ -200,13 +228,56 @@
 </section>
 
 
-<!-- Product growth -->
-<div id="product-growth-header">
+<!-- Praises -->
+<section id="praises" class="py-5">
   <div class="container">
-    <h2 id="growth">PRODUCT GROWTH</h2>
+    <h4>RECENT PRAISES</h4>
+
+    <div class="delibs my-4">
+      
+
+        <div class="custom-card col-8 p-4">
+          <!-- <div class="card-praise-header">STRATEGIC PLANNING</div> -->
+          <div class="row">
+            <div class="col-3 card-praise-picture"><img src="/assets/guillaume.jpeg" alt="Guillaume Grassiant"></div>
+            <div class="col-9">
+              <div class="card-praise-text">" I’ve had the opportunity to work with Alex on multiple strategic projects (eCom, CRM).
+What I’ve liked the most was his ability to help us change our “traditional” web agency approach to a “product” mindset in a very short period of time.
+ "</div>
+              <div class="card-praise-signature mt-3">- <strong>Guillaume Grassiant</strong>, General Manager, u92</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="custom-card col-8 p-4">
+          <!-- <div class="card-praise-header">STRATEGIC PLANNING</div> -->
+          <div class="row">
+            <div class="col-3 card-praise-picture"><img src="/assets/js.jpeg" alt="Jean-Sebastien"></div>
+            <div class="col-9">
+              <div class="card-praise-text">" I’ve know Alex for many years and worked with him twice. One things that stands out is his sharp intellect that enables him to quickly find the causes of any problem. Another is that he has a great work ethic and can deliver when needed.
+His passion for product development and customer experience is undeniable. He is always looking to find the best insights to inform product decisions and really knows how to track performance.
+ "</div>
+              <div class="card-praise-signature mt-3">- <strong>Jean-Sebastien</strong>, Director of New Products, Moment Factory</div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- Product growth -->
+
+<div class="container-fluid" id="product-growth-header-background">
+  <div class="container" id="product-growth-header">
+      <h2 id="growth">PRODUCT GROWTH</h2>
+      <div class="heading-outline"><h2>PRODUCT GROWTH</h2></div>
   </div>
 </div>
-<section class="container-fluid">
+
+<section class="container-fluid services">
   <div class="container">
 
 
@@ -220,134 +291,125 @@
     
 
       
+        <h3>DESIGN</h3>
 
-        <h3>Clarify</h3>
+        <p><p>Design is not how something looks, but how it works.</p>
 
-          <p><p>The answer to <em>“Do you know what your customers are buying?”</em> may seem obvious at first… they are buying your product! Yet, customers buy things for many different reasons:</p>
+<p>This means knowing <em>who</em> you are targeting, <em>what</em> these users want and <em>how</em> you expect them to get value out of your product; and then creating it.</p>
 
-<ul>
-  <li>They might have a lot of disposable income and can afford to test products,</li>
-  <li>They might have a specific problem they are trying to solve,</li>
-  <li>They might want to look good or know what the fuss is all about.</li>
-</ul>
+<p>To that end, I can help clarify who the product is targeting, what they are trying to accomplish, map out the core flows of an app, create high levels mockups and refine the experience until we find a minimum lovable product.</p>
 
-<p>So, in order to grow, you need to know which customer segment is most important, how do you want to pursue them as well as lay out an overall acquisition and retention strategy for all your prospective users.</p>
 </p>
 
-        <h4>What you get</h4>
+        <h4>WHAT YOU GET</h4>
         
 
-        <div class="delibs my-4">
+        <div class="delibs mb-4">
 
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Digital strategy</strong></div>
-                <div></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Product requirement document</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Distill the product features, functionality and purpose in a single document</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Content strategy</strong></div>
-                <div>Outline how to communicate with customers, using which channels, types of content as well as the expected results</div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>User flows</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Map the paths taken by users to achieve a successful outcome in your app. For example, launching a campaign.</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Proto-personas</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Mock ups</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Design a simplified version of your app in order to identify it's core components and understand how they related to one another.</div>
+              </div>
+            </div>
+          
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Components</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Catalogue all UI elements that will be used to build interfaces, such as tables, buttons, cards, etc, with their code.</div>
+              </div>
+            </div>
+          
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Proto-personas</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Create high-level descriptions of target users with their goals and pain points</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Jobs map</strong></div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Jobs map</h5>
+              </div>
+              <div class="card-deliverable-body">
                 <div>Group “Jobs-to-be-done” for which your customers “hire” your product</div>
               </div>
             </div>
           
 
         </div>
+
       
+        <h3>DEVELOPMENT</h3>
 
-        <h3>Structure</h3>
+        <p><p>Development is quite straightforward: I build your app.</p>
 
-          <p><p>Structure is about connecting the <em>what</em> to the <em>how</em>. Once you know who you want to reach and where, in order to improve, you will need to keep track of what was a campaign’s expected outcome and what to do if it fails.</p>
+<p>But, before starting to code, I like to lay a good foundation by defining the product requirements, the data model and the app’s major components. I also follow continuous deployment best practices and document decisions as I go to the best of my abilities.</p>
 
-<p>I help by establishing the steps that need to be carried out when planning a growth activity, by documenting growth activities and by carrying out campaigns with internal teams.</p>
+<p>As a result, in addition to the code and app, you get documents that allow you continue to build and grow your product.</p>
 </p>
 
-        <h4>What you get</h4>
+        <h4>WHAT YOU GET</h4>
         
 
-        <div class="delibs my-4">
+        <div class="delibs mb-4">
 
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Product marketing roadmap</strong></div>
-                <div>Outline the main marketing activities for the coming months as well as their intended outcome</div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Product backlog</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Document the work that needs to be done to create and grow the product</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Campaign briefs</strong></div>
-                <div>Summarize the target, objectives, dependencies as well as the objectives of a campaign or activity</div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Components</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Catalogue all UI elements that will be used to build interfaces, such as tables, buttons, cards, etc, with their code.</div>
               </div>
             </div>
           
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Campaign post-mortems</strong></div>
-                <div>Review campaign performance and formulate next steps</div>
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Schema</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Map all tables in a database and the relationship between them.</div>
               </div>
             </div>
           
 
         </div>
-      
 
-        <h3>Track</h3>
-
-          <p><p>Everyone claims to be data-driven. Yet, very few people are.</p>
-
-<p>This is quite understandable: as digital channels multiply, people have to contend with app analytics, page analytics, social media analytics, tag managers, campaign tracking, etc. In short, things become very complicated, very quickly.</p>
-
-<p>To ensure that you can answer your most pressing questions, I architect and implement your analytics infrastructure, create dashboards and reports and provide instructions on how to properly tag and track your camapigns.</p>
-</p>
-
-        <h4>What you get</h4>
-        
-
-        <div class="delibs my-4">
-
-          
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Digital analytics architecture</strong></div>
-                <div>Document the structure and configuration of the analytics tools used to track user behavior</div>
-              </div>
-            </div>
-          
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Campaign tracking guide</strong></div>
-                <div>Guide with guidelines on how to tag campaigns, what to watch out for, etc</div>
-              </div>
-            </div>
-          
-            <div class="card-deliverable">
-              <div class="card card-body">
-                <div><strong>Dashboards and automated reports</strong></div>
-                <div>Dashboards and reports automatically delivered to your team on a daily, weekly or monthly basis</div>
-              </div>
-            </div>
-          
-
-        </div>
       
 
   </div>

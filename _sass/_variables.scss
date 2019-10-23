@@ -1,34 +1,58 @@
+// -------
 // Imports
+// -------
 
 @font-face {
-  font-family: 'Stellar Bold';
-  src: url('/assets/fonts/Stellar-Bold.otf');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Stellar Light';
-  src: url('/assets/fonts/Stellar-light.otf');
+  font-family: 'Akzidenz Light';
+  src: url('/assets/fonts/AkzidenzGrotesk-Light.otf');
   font-weight: light;
 }
 
 @font-face {
-  font-family: 'Akzidenz';
+  font-family: 'Akzidenz Light Condensed';
+  src: url('/assets/fonts/AkzidenzGrotesk-LightCond.otf');
+  font-weight: light-condensed;
+}
+
+@font-face {
+  font-family: 'Akzidenz Italic';
+  src: url('/assets/fonts/AkzidenzGrotesk-Italic.otf');
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: 'Akzidenz Bold';
+  src: url('/assets/fonts/AkzidenzGrotesk-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Akzidenz Bold Condensed';
   src: url('/assets/fonts/AkzidenzGrotesk-BoldCond.otf');
   font-weight: bold;
 }
 
-// Variables
+@font-face {
+  font-family: 'Akzidenz Extra Bold Condensed';
+  src: url('/assets/fonts/AkzidenzGrotesk-ExtraBoldCond.otf');
+  font-weight: extra-bold;
+}
+
+
+// ----------
+// VARIABLES
+// ----------
 
 $light:  #f8f9fa;
 $red:    #dc3545;
 $green: #0e5f4c;
-$black: #011109;
+$black: #202528;
 
-$heading-font: "Stellar Bold";
+$heading-font: "Akzidenz Extra Bold Condensed";
+$secondary-heading-font: 'Akzidenz Bold Condensed';
 
 $body-bg: $light;
-// $body-color: $red;
+
 
 /* custom vars */
 $custom-font-size: 20px;
@@ -36,52 +60,61 @@ $homepage-font: 1.25rem;
 
 // Styles
 
+body {
+  font-family: 'Akzidenz Light' !important;
+}
+
 h1, h2 {
   font-family: $heading-font;
   color: $black;
 }
 
 h3, h4 {
-  font-family: 'Akzidenz';
+  font-family: 'Akzidenz Extra Bold Condensed';
   color: $black;
 }
 
-// Hero
+/* ------------
+  |   HP HERO  |
+   ------------ */
 
 .logo-header {
   display: grid;
   width: 100vw;
+  justify-items: center;
   overflow: hidden;
   background: linear-gradient(#0e5f4c 80%, transparent 20%) no-repeat
 }
 
 #first-name {
-  font-size: 21.5vw;
-  font-family: 'Stellar Bold';
+  font-size: 22vw;
+  font-family: $heading-font;
   line-height: 0.8;
   grid-row: 1;
   grid-column: 1/12;
 }
 
 #last-name {
-  font-size: 21.5vw;
-  font-family: 'Stellar Bold';
+  font-size: 22vw;
+  font-family: $heading-font;
   line-height: 0.8;
-  grid-row: lastn;
+  grid-row: 2;
   grid-column: 1/8;
   position: relative;
 }
 
 #tagline {
-  font-size: 6vw;
-  font-family: 'Akzidenz';
+  font-size: 7vw;
+  font-family: $secondary-heading-font;
   grid-row: 2;
   grid-column: 8/12;
   position: relative;
-  vertical-align: text-bottom;
   text-transform: uppercase;
-  line-height: 0.8;
+  line-height: 0.7;
+  letter-spacing: -1px;
+  padding-left: 10px;
 }
+
 
 // ------------------
 // |    HOME NAV    |
@@ -89,97 +122,93 @@ h3, h4 {
 
  #nav-home {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+
+  font-family: 'Akzidenz Light Condensed';
+  font-size: 2.5rem;
   a {
+    text-align: right;
     color: black;
-    font-family: 'Stellar Light';
-    font-size: 2.5rem;
-    padding: 20px 50px 20px 50px;
-    width: 100%;
+    margin-left: 1em;
     &:hover, &.active {
-      text-decoration: none;
-      background-image: url('/assets/ellipse.png');
-      background-position: center;
-      background-size: cover;
+      border-bottom: 4px solid $green;
     }
     &:last-child {
-      margin-right: 1em;
+      // margin-right: 1em;
     }
   }
 }
 
+.home-nav-item {
+  border-bottom: 1px solid $black;
+  color: black;
+    &:hover {
+      color: $light;
+      text-decoration: none;
+  }
+}
 
-// .hero {
-//   background: linear-gradient($green 75%, transparent 20%) no-repeat;
-// }
-
-// .hero-font {
-//   font-size: 22vw;
-//   font-family: $heading-font;
-//   line-height: 0.8;
-// }
-
-// #alexandre {
-//   overflow: hidden
-// }
-
-// .subhead {
-//   font-size: 4vw;
-//   font-family: $heading-font;
-//   color: $light;
-//   // display: inline-block;
-//   padding: 0;
-// }
-
-// .hero > .container-fluid > .row > .col-7 {
-//   padding-right: 0;
-//   padding-left: 0;
-// }
+// -------
+// | BIO |
+// -------
 
 .me {
   font-size: $homepage-font;
-  margin: 5em 0 5em 0;
+  margin-bottom: 5em;
 }
 
-.test {
-  padding: 1rem;
-  position: relative;
-  top: 20px;
-  color: $red;
-  // display: inline-block;
-  background-color: $red;
-  margin: auto;
-  display: flex;
+/* Connectors */
+
+#line {
+  border-left: 1px solid $black;
+  margin-left: 7px;
+  height: 100px;
+  margin-top: 20px;
 }
 
-.img-test{
-  width: 100%;
+#arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  border-top: 10px solid $black;
 }
 
-#overlap{
-  position: relative;
-  left: -5%;
-  top: 100px;
-  background-color: $light;
-  opacity: 50%;
-}
+// ------------
+// | SERVICES |
+// ------------
 
-#services {
-  // padding-top: 130px;
-  background-color: $green;
-  // height: 200px;
-  font-size: $homepage-font;
-  color: $light;
+.services {
   padding-bottom: 60px;
+  font-size: 1.15rem;
+  background-color: $green;
+  color: $light;
 
   h3 {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    font-family: $heading-font;
+    line-height: 0.7;
+    margin-top: 3rem;
+  }
+
+  h4 {
+    font-family: $heading-font;
+    font-size: 3rem;
+    margin-bottom: -20px;
   }
 }
 
+#product-dev-header-background {
+  background: linear-gradient(transparent 50%, #0e5f4c 50%) no-repeat;
+}
+
+#product-growth-header-background {
+  background: linear-gradient(#0f1400 50%, #0e5f4c 50%) no-repeat;
+}
 
 #product-dev-header {
-  background: linear-gradient(transparent 50%, #0e5f4c 50%) no-repeat;
+  position: relative;
 
   h2{
     font-size: 5rem;
@@ -189,51 +218,57 @@ h3, h4 {
 }
 
 #product-growth-header {
-  background: linear-gradient(#0e5f4c 50%, transparent 50%) no-repeat;
+  position: relative;
 
   h2{
     font-size: 5rem;
-    color: $black;
+    color: $light;
     margin-bottom: 0;
   }
 }
 
+.heading-outline {
+  font-size: 5rem;
+  font-family: $heading-font;
+  -webkit-text-stroke: 2px $black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 15px 0 15px;
+  z-index: -1;
+}
 
-// ** HOME NAV **
-// --------------
-// .nav-home {
-//   z-index: 1;
-//   display: flex;
-//   justify-content: flex-end;
-//   padding: 10px;
-//   font-weight: 700;
-//   position: fixed;
-//   opacity: 0.6;
-//   width: 100%;
-//   background-color: $light;
-//   a {
-//     color: $green;
-//     margin-right: 10px;
-//     opacity: 1;
-//   }
-// }
+
+// -------------------
+// PRAISES
+// -------------------
+
+#praises {
+  background-color: #0f1500;
+
+  h4 {
+    font-size: 4rem;
+    color: $green;
+    margin-bottom: -45px;
+  }
+}
+
+
+
+
+// -------------------
+// REST OF WEBSITE NAV
+// -------------------
 
 .nav-global {
-  background: linear-gradient($green 75%, transparent 20%) no-repeat;
+  background: linear-gradient($green 75%, $black 20%) no-repeat;
   display: flex;
   justify-content: space-between;
   padding: 0 10px 0 10px;
   // font-weight: 700;
   width: 100%;
-  a {
-    color: black;
-    &:hover {
-      color: $light;
-      text-decoration: none;
-    }
   }
 
-}
 
 .nav-items {
   font-family: $heading-font;
@@ -251,12 +286,74 @@ h3, h4 {
   line-height: 0.8;
 }
 
+// -----
+// CARDS
+// -----
+
+
+// Deliverables card
+.delibs {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.custom-card {
+  color: $black;
+  background-color: $light;
+  font-size: 1rem;
+  border-radius: 3px;
+  padding: 15px;
+  margin-left: 15px;
+}
+
 .card-deliverable {
   min-width: 250px;
   max-width: 250px;
-  margin-right: 15px;
-  // box-shadow: 4px 6px 8px 2px rgba(203,254,5,1);
+  box-shadow: 0px 2px 3px $black;
 }
+
+.card-deliverable-header h5{
+  font-size: 2.5rem;
+  font-family: $secondary-heading-font;
+  line-height: 0.7;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $black;
+}
+
+
+.card-deliverable-body {
+  font-size: 1.15rem;
+}
+
+// Testimonial card
+
+.card-praise-header {
+  font-family: 'Akzidenz Bold';
+  font-size: 1.25rem;
+  border-bottom: 1px solid $black;
+  margin-bottom: 1.5rem;
+}
+
+.card-praise-picture img{
+  width: 100%;
+  border-radius: 3px;
+}
+
+.card-praise-text {
+  font-family: 'Akzidenz Italic';
+  font-size: 1.15rem;
+}
+
+.card-praise-signature {
+  text-align: right;
+  font-size: 1.15rem;
+}
+
+// ------
+// FOOTER
+// ------
 
 .footer {
   display: flex;
@@ -265,20 +362,4 @@ h3, h4 {
   justify-content: flex-end;
   font-family: $heading-font;
   color: $light;
-
-}
-
-.card {
-  color: $black;
-  font-size: 1rem;
-  height: 100%;
-  border-radius: 3px;
-}
-
-.card-body {
-}
-
-.delibs {
-  display: flex;
-  overflow-x: scroll;
 }
