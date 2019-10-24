@@ -230,38 +230,55 @@
 
 <!-- Praises -->
 <section id="praises" class="py-5">
-  <div class="container">
-    <h4>RECENT PRAISES</h4>
+  <div class="container-fluid">
+    <h4 class="d-flex col-lg-8 offset-2">RECENT PRAISES</h4>
 
-    <div class="delibs my-4">
+    <div class="praises my-4">
+
       
 
-        <div class="custom-card col-8 p-4">
-          <!-- <div class="card-praise-header">STRATEGIC PLANNING</div> -->
+        <!-- Arrow previous -->
+        <div id="the-previous-one" class="slider-nav col-lg-1 d-flex align-items-center">
+          <div>
+            <div id="horizontal-line-left"></div>
+            <div class="arrow-left" id="previous-arrow"></div>
+            <div>
+              A PREVIOUS ONE
+            </div>
+          </div>
+        </div>
+
+        <!-- "praise" -->
+        <div class="custom-card p-4 col-lg-8 offset-1">
+          <div class="card-praise-header">Digital Strategy</div>
           <div class="row">
-            <div class="col-3 card-praise-picture"><img src="/assets/guillaume.jpeg" alt="Guillaume Grassiant"></div>
-            <div class="col-9">
-              <div class="card-praise-text">" I’ve had the opportunity to work with Alex on multiple strategic projects (eCom, CRM).
+              <div class="card-praise-picture col-3">
+                <img src="/assets/guillaume.jpeg" alt="Guillaume Grassiant">
+              </div>
+              <div class="col-9">
+                <div class="card-praise-text">
+                  I’ve had the opportunity to work with Alex on multiple strategic projects (eCom, CRM).
 What I’ve liked the most was his ability to help us change our “traditional” web agency approach to a “product” mindset in a very short period of time.
- "</div>
-              <div class="card-praise-signature mt-3">- <strong>Guillaume Grassiant</strong>, General Manager, u92</div>
-            </div>
-          </div>
-        </div>
-      
 
-        <div class="custom-card col-8 p-4">
-          <!-- <div class="card-praise-header">STRATEGIC PLANNING</div> -->
-          <div class="row">
-            <div class="col-3 card-praise-picture"><img src="/assets/js.jpeg" alt="Jean-Sebastien"></div>
-            <div class="col-9">
-              <div class="card-praise-text">" I’ve know Alex for many years and worked with him twice. One things that stands out is his sharp intellect that enables him to quickly find the causes of any problem. Another is that he has a great work ethic and can deliver when needed.
-His passion for product development and customer experience is undeniable. He is always looking to find the best insights to inform product decisions and really knows how to track performance.
- "</div>
-              <div class="card-praise-signature mt-3">- <strong>Jean-Sebastien</strong>, Director of New Products, Moment Factory</div>
+                  </div>
+                <div class="card-praise-signature mt-3"><strong class="praise-name">- Guillaume Grassiant</strong>, General Manager, u92</div>
+              </div>
             </div>
           </div>
+
+        <!-- "Arrow next" -->
+          <div id="another-one" class="slider-nav col-lg-2 offset-1 d-flex align-items-center">
+            <div>
+              <div id="horizontal-line-right"></div>
+              <div class="arrow-right" id="next-arrow"></div>
+              <div>
+                AN <br> OTHER ONE
+              </div>
+            </div>
+          </div>
+
         </div>
+
       
     </div>
   </div>
@@ -291,14 +308,17 @@ His passion for product development and customer experience is undeniable. He is
     
 
       
-        <h3>DESIGN</h3>
+        <h3>CLARIFY</h3>
 
-        <p><p>Design is not how something looks, but how it works.</p>
+        <p><p>The answer to <em>“Do you know what your customers are buying?”</em> may seem obvious at first… they are buying your product! Yet, customers buy things for many different reasons:</p>
 
-<p>This means knowing <em>who</em> you are targeting, <em>what</em> these users want and <em>how</em> you expect them to get value out of your product; and then creating it.</p>
+<ul>
+  <li>They might have a lot of disposable income and can afford to test products,</li>
+  <li>They might have a specific problem they are trying to solve,</li>
+  <li>They might want to look good or know what the fuss is all about.</li>
+</ul>
 
-<p>To that end, I can help clarify who the product is targeting, what they are trying to accomplish, map out the core flows of an app, create high levels mockups and refine the experience until we find a minimum lovable product.</p>
-
+<p>So, in order to grow, you need to know which customer segment is most important, how do you want to pursue them as well as lay out an overall acquisition and retention strategy for all your prospective users.</p>
 </p>
 
         <h4>WHAT YOU GET</h4>
@@ -309,37 +329,19 @@ His passion for product development and customer experience is undeniable. He is
           
             <div class="custom-card card-deliverable">
               <div class="card-deliverable-header">
-                <h5>Product requirement document</h5>
+                <h5>Digital strategy</h5>
               </div>
               <div class="card-deliverable-body">
-                <div>Distill the product features, functionality and purpose in a single document</div>
+                <div></div>
               </div>
             </div>
           
             <div class="custom-card card-deliverable">
               <div class="card-deliverable-header">
-                <h5>User flows</h5>
+                <h5>Content strategy</h5>
               </div>
               <div class="card-deliverable-body">
-                <div>Map the paths taken by users to achieve a successful outcome in your app. For example, launching a campaign.</div>
-              </div>
-            </div>
-          
-            <div class="custom-card card-deliverable">
-              <div class="card-deliverable-header">
-                <h5>Mock ups</h5>
-              </div>
-              <div class="card-deliverable-body">
-                <div>Design a simplified version of your app in order to identify it's core components and understand how they related to one another.</div>
-              </div>
-            </div>
-          
-            <div class="custom-card card-deliverable">
-              <div class="card-deliverable-header">
-                <h5>Components</h5>
-              </div>
-              <div class="card-deliverable-body">
-                <div>Catalogue all UI elements that will be used to build interfaces, such as tables, buttons, cards, etc, with their code.</div>
+                <div>Outline how to communicate with customers, using which channels, types of content as well as the expected results</div>
               </div>
             </div>
           
@@ -365,13 +367,11 @@ His passion for product development and customer experience is undeniable. He is
         </div>
 
       
-        <h3>DEVELOPMENT</h3>
+        <h3>STRUCTURE</h3>
 
-        <p><p>Development is quite straightforward: I build your app.</p>
+        <p><p>Structure is about connecting the <em>what</em> to the <em>how</em>. Once you know who you want to reach and where, in order to improve, you will need to keep track of what was a campaign’s expected outcome and what to do if it fails.</p>
 
-<p>But, before starting to code, I like to lay a good foundation by defining the product requirements, the data model and the app’s major components. I also follow continuous deployment best practices and document decisions as I go to the best of my abilities.</p>
-
-<p>As a result, in addition to the code and app, you get documents that allow you continue to build and grow your product.</p>
+<p>I help by establishing the steps that need to be carried out when planning a growth activity, by documenting growth activities and by carrying out campaigns with internal teams.</p>
 </p>
 
         <h4>WHAT YOU GET</h4>
@@ -382,28 +382,74 @@ His passion for product development and customer experience is undeniable. He is
           
             <div class="custom-card card-deliverable">
               <div class="card-deliverable-header">
-                <h5>Product backlog</h5>
+                <h5>Product marketing roadmap</h5>
               </div>
               <div class="card-deliverable-body">
-                <div>Document the work that needs to be done to create and grow the product</div>
+                <div>Outline the main marketing activities for the coming months as well as their intended outcome</div>
               </div>
             </div>
           
             <div class="custom-card card-deliverable">
               <div class="card-deliverable-header">
-                <h5>Components</h5>
+                <h5>Campaign briefs</h5>
               </div>
               <div class="card-deliverable-body">
-                <div>Catalogue all UI elements that will be used to build interfaces, such as tables, buttons, cards, etc, with their code.</div>
+                <div>Summarize the target, objectives, dependencies as well as the objectives of a campaign or activity</div>
               </div>
             </div>
           
             <div class="custom-card card-deliverable">
               <div class="card-deliverable-header">
-                <h5>Schema</h5>
+                <h5>Campaign post-mortems</h5>
               </div>
               <div class="card-deliverable-body">
-                <div>Map all tables in a database and the relationship between them.</div>
+                <div>Review campaign performance and formulate next steps</div>
+              </div>
+            </div>
+          
+
+        </div>
+
+      
+        <h3>TRACK</h3>
+
+        <p><p>Everyone claims to be data-driven. Yet, very few people are.</p>
+
+<p>This is quite understandable: as digital channels multiply, people have to contend with app analytics, page analytics, social media analytics, tag managers, campaign tracking, etc. In short, things become very complicated, very quickly.</p>
+
+<p>To ensure that you can answer your most pressing questions, I architect and implement your analytics infrastructure, create dashboards and reports and provide instructions on how to properly tag and track your camapigns.</p>
+</p>
+
+        <h4>WHAT YOU GET</h4>
+        
+
+        <div class="delibs mb-4">
+
+          
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Digital analytics architecture</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Document the structure and configuration of the analytics tools used to track user behavior</div>
+              </div>
+            </div>
+          
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Campaign tracking guide</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Guide with guidelines on how to tag campaigns, what to watch out for, etc</div>
+              </div>
+            </div>
+          
+            <div class="custom-card card-deliverable">
+              <div class="card-deliverable-header">
+                <h5>Dashboards and automated reports</h5>
+              </div>
+              <div class="card-deliverable-body">
+                <div>Dashboards and reports automatically delivered to your team on a daily, weekly or monthly basis</div>
               </div>
             </div>
           
