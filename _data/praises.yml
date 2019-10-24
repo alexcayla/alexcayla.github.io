@@ -3,18 +3,18 @@
   en:
     role: General Manager
     company: u92
-    service: Strategic planning
+    service: Digital Strategy
     text: |
       I’ve had the opportunity to work with Alex on multiple strategic projects (eCom, CRM).
       What I’ve liked the most was his ability to help us change our “traditional” web agency approach to a “product” mindset in a very short period of time.
 
-- name: Jean-Sebastien
-  picture: js.jpeg
-  en:
-    role: Director of New Products
-    company: Moment Factory
-    service: Strategic planning
-    text: |
-      I’ve know Alex for many years and worked with him twice. One things that stands out is his sharp intellect that enables him to quickly find the causes of any problem. Another is that he has a great work ethic and can deliver when needed.
-      His passion for product development and customer experience is undeniable. He is always looking to find the best insights to inform product decisions and really knows how to track performance.
+# - name: Jean-Sebastien
+#   picture: js.jpeg
+#   en:
+#     role: Director of New Products
+#     company: Moment Factory
+#     service: Strategic planning
+#     text: |
+#       I’ve know Alex for many years and worked with him twice. One things that stands out is his sharp intellect that enables him to quickly find the causes of any problem. Another is that he has a great work ethic and can deliver when needed.
+#       His passion for product development and customer experience is undeniable. He is always looking to find the best insights to inform product decisions and really knows how to track performance.
 

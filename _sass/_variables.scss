@@ -21,6 +21,12 @@
 }
 
 @font-face {
+  font-family: 'Akzidenz Light Italic';
+  src: url('/assets/fonts/AkzidenzGrotesk-LightItalic.otf');
+  font-weight: light-italic;
+}
+
+@font-face {
   font-family: 'Akzidenz Bold';
   src: url('/assets/fonts/AkzidenzGrotesk-Bold.otf');
   font-weight: bold;
@@ -39,6 +45,7 @@
 }
 
 
+
 // ----------
 // VARIABLES
 // ----------
@@ -50,6 +57,8 @@ $black: #202528;
 
 $heading-font: "Akzidenz Extra Bold Condensed";
 $secondary-heading-font: 'Akzidenz Bold Condensed';
+
+$nav-font: 'Akzidenz Light Condensed';
 
 $body-bg: $light;
 
@@ -124,7 +133,7 @@ h3, h4 {
   display: flex;
   justify-content: space-between;
 
-  font-family: 'Akzidenz Light Condensed';
+  font-family: $nav-font;
   font-size: 2.5rem;
   a {
     text-align: right;
@@ -181,7 +190,7 @@ h3, h4 {
 
 .services {
   padding-bottom: 60px;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   background-color: $green;
   color: $light;
 
@@ -254,36 +263,40 @@ h3, h4 {
 }
 
 
-
-
 // -------------------
 // REST OF WEBSITE NAV
 // -------------------
 
 .nav-global {
-  background: linear-gradient($green 75%, $black 20%) no-repeat;
   display: flex;
   justify-content: space-between;
   padding: 0 10px 0 10px;
-  // font-weight: 700;
-  width: 100%;
+  font-weight: 700;
+  // width: 100%;
+  background: linear-gradient($green 75%, transparent 20%) no-repeat;
   }
 
 
 .nav-items {
-  font-family: $heading-font;
-  font-weight: $light;
+  font-family: $nav-font;
   padding: 7px;
-  a {
+  > a {
     margin-left: 10px;
+    color: $light;
+    font-size: 2  rem;
   }
 
 }
 
-.nav-logo {
-  font-family: $heading-font;
-  font-size: 30px;
-  line-height: 0.8;
+.nav-logo{
+
+  padding: 0 10px 0 10px;
+  a{
+    font-family: $heading-font;
+    font-size: 60px;
+    line-height: 0.6;
+    color: $black;
+  }
 }
 
 // -----
@@ -295,6 +308,11 @@ h3, h4 {
 .delibs {
   display: flex;
   overflow-x: scroll;
+}
+
+.praises {
+  display: flex;
+  overflow: hidden;
 }
 
 .custom-card {
@@ -315,7 +333,7 @@ h3, h4 {
 .card-deliverable-header h5{
   font-size: 2.5rem;
   font-family: $secondary-heading-font;
-  line-height: 0.7;
+  line-height: 0.8;
   height: 200px;
   display: flex;
   align-items: center;
@@ -325,12 +343,17 @@ h3, h4 {
 
 .card-deliverable-body {
   font-size: 1.15rem;
+  // line-height: 1.3;
 }
 
 // Testimonial card
 
+.card-praise {
+  // width: 800px;
+}
+
 .card-praise-header {
-  font-family: 'Akzidenz Bold';
+  font-family: 'Akzidenz Bold Condensed';
   font-size: 1.25rem;
   border-bottom: 1px solid $black;
   margin-bottom: 1.5rem;
@@ -342,13 +365,98 @@ h3, h4 {
 }
 
 .card-praise-text {
-  font-family: 'Akzidenz Italic';
-  font-size: 1.15rem;
+  font-family: 'Akzidenz Light Italic';
+  font-size: 1.5rem;
 }
 
 .card-praise-signature {
+  font-family: 'Akzidenz Light Condensed';
   text-align: right;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
+}
+
+.praise-name{
+  font-family: 'Akzidenz Bold Condensed';
+  font-size: 1.25rem;
+
+}
+
+// ----------
+// SLIDER NAV
+// ----------
+
+.slider-nav{
+  color: $green;
+  font-family: $secondary-heading-font;
+  font-size: 4rem;
+  line-height: 1;
+  align-items: center;
+}
+
+
+#the-previous-one {
+  text-align: right;
+  left: -5% ;
+  &:hover{
+    left: 0;
+  }
+  div {
+    position: relative;
+  }
+}
+
+#horizontal-line-left{
+  width: 100%;
+  position: absolute;
+  left: 10%;
+  top: 72px;
+  border-bottom: 1px solid $light;
+}
+
+#horizontal-line-right{
+  width: 80%;
+  position: absolute;
+  right: 10%;
+  top: 72px;
+  border-bottom: 1px solid $light;
+}
+
+#another-one{
+  &:hover{
+    right: 8%;
+  }
+  div {
+    position: relative;
+  }
+}
+
+.arrow-left{
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid $light;
+}
+
+#previous-arrow {
+  position: absolute;
+  left: 8%;
+  top: 66px;
+}
+
+.arrow-right{
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+
+  border-left: 5px solid $light;
+}
+
+#next-arrow{
+  position: absolute;
+  left: 70%;
+  top: 66px;
 }
 
 // ------
@@ -362,4 +470,8 @@ h3, h4 {
   justify-content: flex-end;
   font-family: $heading-font;
   color: $light;
+}
+
+.main-content{
+  height: 90vh;
 }
