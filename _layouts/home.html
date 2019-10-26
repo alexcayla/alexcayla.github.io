@@ -1,29 +1,7 @@
-{% include head.html %}
 
-<div class="logo-header">
-  <div id="first-name">ALEXANDRE</div>
-  <div id="last-name">CAYLA</div>
-  <div id="tagline" class="d-flex align-items-center">
-    <div>
-      Digital product <span style="color:#cbfe07;">development</span> <br> and growth
-    </div>
-  </div>
-</div>
+{% include header-home.html %}
 
-
-<div id="nav-home" class="container mt-4">
-  <div class="home-nav-item">Bio</div>
-  <div class="d-flex">
-    <div><a href="#" class="home-nav-item">Projects</a></div>
-    <div><a href="#" class="home-nav-item">Writing</a></div>
-    <div><a href="/contact" class="home-nav-item">Get in touch</a></div>
-  </div>
-</div>
-<div class="container">
-  <div id="line" class="container"></div>
-  <div id="arrow-down"></div>
-</div>
-
+<!-- me -->
 
 <section class="me">
   <div class="container-fluid">
@@ -74,7 +52,7 @@
           {% for deliverable in deliverables%}
             <div class="custom-card card-deliverable">
               <div class="card-deliverable-header">
-                <h5>{{deliverable.name | capitalize}}</h5>
+                <h5 class="card-heading">{{deliverable.name | capitalize}}</h5>
               </div>
               <div class="card-deliverable-body">
                 <div>{{deliverable.description}}</div>
@@ -174,7 +152,7 @@
           {% for deliverable in deliverables%}
             <div class="custom-card card-deliverable">
               <div class="card-deliverable-header">
-                <h5>{{deliverable.name | capitalize}}</h5>
+                <h5 class="card-heading">{{deliverable.name | capitalize}}</h5>
               </div>
               <div class="card-deliverable-body">
                 <div>{{deliverable.description}}</div>

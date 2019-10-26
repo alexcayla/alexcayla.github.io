@@ -2,58 +2,14 @@
 // Imports
 // -------
 
-@font-face {
-  font-family: 'Akzidenz Light';
-  src: url('/assets/fonts/AkzidenzGrotesk-Light.otf');
-  font-weight: light;
-}
-
-@font-face {
-  font-family: 'Akzidenz Light Condensed';
-  src: url('/assets/fonts/AkzidenzGrotesk-LightCond.otf');
-  font-weight: light-condensed;
-}
-
-@font-face {
-  font-family: 'Akzidenz Italic';
-  src: url('/assets/fonts/AkzidenzGrotesk-Italic.otf');
-  font-weight: italic;
-}
-
-@font-face {
-  font-family: 'Akzidenz Light Italic';
-  src: url('/assets/fonts/AkzidenzGrotesk-LightItalic.otf');
-  font-weight: light-italic;
-}
-
-@font-face {
-  font-family: 'Akzidenz Bold';
-  src: url('/assets/fonts/AkzidenzGrotesk-Bold.otf');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Akzidenz Bold Condensed';
-  src: url('/assets/fonts/AkzidenzGrotesk-BoldCond.otf');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Akzidenz Extra Bold Condensed';
-  src: url('/assets/fonts/AkzidenzGrotesk-ExtraBoldCond.otf');
-  font-weight: extra-bold;
-}
-
+@import 'fonts';
+@import 'colours';
+@import 'components/navigation';
 
 
 // ----------
 // VARIABLES
 // ----------
-
-$light:  #f8f9fa;
-$red:    #dc3545;
-$green: #0e5f4c;
-$black: #202528;
 
 $heading-font: "Akzidenz Extra Bold Condensed";
 $secondary-heading-font: 'Akzidenz Bold Condensed';
@@ -124,38 +80,6 @@ h3, h4 {
   padding-left: 10px;
 }
 
-
-// ------------------
-// |    HOME NAV    |
-// ------------------
-
- #nav-home {
-  display: flex;
-  justify-content: space-between;
-
-  font-family: $nav-font;
-  font-size: 2.5rem;
-  a {
-    text-align: right;
-    color: black;
-    margin-left: 1em;
-    &:hover, &.active {
-      border-bottom: 4px solid $green;
-    }
-    &:last-child {
-      // margin-right: 1em;
-    }
-  }
-}
-
-.home-nav-item {
-  border-bottom: 1px solid $black;
-  color: black;
-    &:hover {
-      color: $light;
-      text-decoration: none;
-  }
-}
 
 // -------
 // | BIO |
@@ -263,42 +187,6 @@ h3, h4 {
 }
 
 
-// -------------------
-// REST OF WEBSITE NAV
-// -------------------
-
-.nav-global {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px 0 10px;
-  font-weight: 700;
-  // width: 100%;
-  background: linear-gradient($green 75%, transparent 20%) no-repeat;
-  }
-
-
-.nav-items {
-  font-family: $nav-font;
-  padding: 7px;
-  > a {
-    margin-left: 10px;
-    color: $light;
-    font-size: 2  rem;
-  }
-
-}
-
-.nav-logo{
-
-  padding: 0 10px 0 10px;
-  a{
-    font-family: $heading-font;
-    font-size: 60px;
-    line-height: 0.6;
-    color: $black;
-  }
-}
-
 // -----
 // CARDS
 // -----
@@ -330,16 +218,23 @@ h3, h4 {
   box-shadow: 0px 2px 3px $black;
 }
 
-.card-deliverable-header h5{
-  font-size: 2.5rem;
-  font-family: $secondary-heading-font;
-  line-height: 0.8;
+.card-deliverable-header{
   height: 200px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid $black;
 }
 
+.card-heading {
+  font-size: 2.5rem;
+  font-family: $secondary-heading-font;
+  line-height: 0.8;
+  color: $black;
+  &:hover{
+    text-decoration: none;
+    color: $yellow;
+  }
+}
 
 .card-deliverable-body {
   font-size: 1.15rem;
@@ -378,6 +273,15 @@ h3, h4 {
 .praise-name{
   font-family: 'Akzidenz Bold Condensed';
   font-size: 1.25rem;
+
+}
+
+
+.card-project {
+  background-color: white;
+}
+
+.card-project-header {
 
 }
 
@@ -457,6 +361,19 @@ h3, h4 {
   position: absolute;
   left: 70%;
   top: 66px;
+}
+
+
+// project
+
+.project-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.post-image {
+  width: 250px;
 }
 
 // ------
