@@ -1,1 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-24T13:48:34-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexandre Cayla</title><subtitle>Alexandre Cayla, Product development and growth</subtitle><entry><title type="html">Welcome To Jekyll</title><link href="http://localhost:4000/2019/06/25/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome To Jekyll" /><published>2019-06-25T00:00:00-04:00</published><updated>2019-06-25T00:00:00-04:00</updated><id>http://localhost:4000/2019/06/25/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2019/06/25/welcome-to-jekyll/"></content><author><name></name></author><summary type="html"></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-25T17:50:56-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexandre Cayla</title><subtitle>Alexandre Cayla, Product development and growth</subtitle><entry><title type="html">On Privacy</title><link href="http://localhost:4000/2019/10/25/On-privacy/" rel="alternate" type="text/html" title="On Privacy" /><published>2019-10-25T00:00:00-04:00</published><updated>2019-10-25T00:00:00-04:00</updated><id>http://localhost:4000/2019/10/25/On-privacy</id><content type="html" xml:base="http://localhost:4000/2019/10/25/On-privacy/">&lt;h1 id=&quot;on-privacy&quot;&gt;On privacy&lt;/h1&gt;
+
+&lt;p&gt;Fri, Oct 25, 19&lt;/p&gt;
+
+&lt;p&gt;This week, Mark zukerberg appeared in front of a congressionnal committee to discuss the Libra crypto-currency.&lt;/p&gt;
+
+&lt;p&gt;There seems to be a disconnect between&lt;/p&gt;
+
+&lt;p&gt;Privacy as a right, privacy as a right to know which data was collected on us. To ask to be forgotten, etc.&lt;/p&gt;
+
+&lt;p&gt;However, that misses most of the point.&lt;/p&gt;
+
+&lt;p&gt;While there is value in knowing which bands I like, most of the value is inferred from &lt;em&gt;what I do&lt;/em&gt; and &lt;em&gt;the network I belong&lt;/em&gt; to.&lt;/p&gt;
+
+&lt;p&gt;For example, when Facebook was able to predict when a pair was about to become a couple based on the frequency of interactions on each others posts.&lt;/p&gt;
+
+&lt;p&gt;I am not American. Howevr&lt;/p&gt;</content><author><name></name></author><summary type="html">On privacy</summary></entry><entry><title type="html">On Purpose</title><link href="http://localhost:4000/2019/10/25/On-purpose/" rel="alternate" type="text/html" title="On Purpose" /><published>2019-10-25T00:00:00-04:00</published><updated>2019-10-25T00:00:00-04:00</updated><id>http://localhost:4000/2019/10/25/On-purpose</id><content type="html" xml:base="http://localhost:4000/2019/10/25/On-purpose/">&lt;h1 id=&quot;on-purpose&quot;&gt;On purpose&lt;/h1&gt;
+
+&lt;p&gt;Over the past year, I indulged in quite a few luxuries: I travelled around the world, but most importantly, I mainly focused on projects that I wanted to do.&lt;/p&gt;
+
+&lt;p&gt;Obviously, things were not that simple. I still had bills to pay, so I taught, did some consluting work, etc. But I still had time to pursue my own projects and try to make the most of them.&lt;/p&gt;
+
+&lt;p&gt;This forced me to have to answer two questions: why was I doing what I was foing? And what did I want to accomplish? I short, if I wanted to use my time meaningfully, what was my purpose?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What was I selling?&lt;/li&gt;
+  &lt;li&gt;What did I want to do?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I short, if I had to luxury to live meaningfully,&lt;/p&gt;
+
+&lt;p&gt;I also did a podcast. When I spoke with people about their jobs and their work.&lt;/p&gt;
+
+&lt;p&gt;Getting them to open up was hard because, often, a job is… a job.&lt;/p&gt;
+
+&lt;p&gt;Poeple don’t typically have autonomy or do not get the luxury of defining their work.&lt;/p&gt;
+
+&lt;p&gt;I don’t know if this is something that is true for all companies. If more successful ones give more autonomy to their teams.&lt;/p&gt;
+
+&lt;p&gt;It surpised me because I think deeply about my work.&lt;/p&gt;
+
+&lt;p&gt;I like working on products and on designing&lt;/p&gt;
+
+&lt;p&gt;because it is my way of feeling that I am contributing to the world. Well designed products make peoples daily lives a little better. And, in a time of unrest, of diminishing social liberties, of increasing weatl inequality, this is my way of feeling that I am in control and prodiving.&lt;/p&gt;
+
+&lt;p&gt;Yet, I don’t think&lt;/p&gt;</content><author><name></name></author><summary type="html">On purpose</summary></entry><entry><title type="html">Building A New Template</title><link href="http://localhost:4000/2019/10/25/building-a-new-template/" rel="alternate" type="text/html" title="Building A New Template" /><published>2019-10-25T00:00:00-04:00</published><updated>2019-10-25T00:00:00-04:00</updated><id>http://localhost:4000/2019/10/25/building-a-new-template</id><content type="html" xml:base="http://localhost:4000/2019/10/25/building-a-new-template/">&lt;h1 id=&quot;building-a-new-template&quot;&gt;Building a new template&lt;/h1&gt;</content><author><name></name></author><summary type="html">Building a new template</summary></entry><entry><title type="html">Welcome To Jekyll</title><link href="http://localhost:4000/2019/06/25/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome To Jekyll" /><published>2019-06-25T00:00:00-04:00</published><updated>2019-06-25T00:00:00-04:00</updated><id>http://localhost:4000/2019/06/25/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2019/06/25/welcome-to-jekyll/">&lt;p&gt;Thanks, man!&lt;/p&gt;</content><author><name></name></author><summary type="html">Thanks, man!</summary></entry></feed>

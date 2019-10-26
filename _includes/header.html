@@ -1,16 +1,31 @@
+{% include head.html %}
+
 <div class="nav-global">
-  <div class="nav-logo">
-    <a href="/">ALEXANDRE <br> CAYLA</a>
+  <div class="container">
+    <div class="d-flex justify-content-between">
+      <a href="/" class="nav-logo">
+        <div>ALEXANDRE</div>
+        <div>CAYLA</div>
+      </a>
+
+      <div id="global-tagline">
+        <div>DIGITAL PRODUCT</div>
+        <div class="accent">DEVELOPMENT</div>
+        <div>AND GROWTH</div>
+      </div>
+    </div>
   </div>
-  <div>ANOTHER ONE</div>
 </div>
 
-<div class="d-flex">
-  <div class="nav-items">
+<div class="container d-flex justify-content-end">
+  <div class="main-nav">
     <!-- <a href="/services">Services</a> -->
-    <a href="/projects">Projects</a>
-    <a href="">Writings</a>
-    <a href="">Contact</a>
+    <div class="d-flex" id="sub-nav">
+      <div><a href="/projects" class="main-nav-item">Projects</a></div>
+      <div><a href="/posts" class="main-nav-item">Writings</a></div>
+      <div><a href="/contact" class="main-nav-item">Get in touch</a></div>
+    </div>
   </div>
 </div>
+
 
