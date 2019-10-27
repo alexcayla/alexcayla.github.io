@@ -25,7 +25,7 @@ $nav-font: 'Akzidenz Light Condensed';
   display: flex;
   justify-content: space-between;
   font-family: $nav-font;
-  font-size: 2.5rem;
+  font-size: calc(1.5rem + 1vw);
 
   a {
     text-align: right;
@@ -54,8 +54,8 @@ $nav-font: 'Akzidenz Light Condensed';
 a.nav-logo {
   display: block;
   font-family: $heading-font;
+  font-size: calc(1.75rem + 1vw);
   font-weight: 700;
-  font-size: 3.5rem;
   line-height: 0.75;
   color: $black;
     &:hover {
@@ -64,10 +64,14 @@ a.nav-logo {
     }
 }
 
+.nav-logo {
+  // font-size: calc(2rem +1vw);
+}
+
 #global-tagline{
   font-family: $secondary-heading-font;
   line-height: 0.7;
-  font-size: 2rem;
+  font-size: calc(1rem + 1vw);
   div {
     text-align: right;
   }

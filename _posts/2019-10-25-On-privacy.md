@@ -18,4 +18,7 @@ While there is value in knowing which bands I like, most of the value is inferre
 
 For example, when Facebook was able to predict when a pair was about to become a couple based on the frequency of interactions on each others posts. 
 
+
+As an alternative, 
+
 I am not American. Howevr 

@@ -25,8 +25,8 @@
 
 <div class="container-fluid" id="product-dev-header-background">
   <div class="container" id="product-dev-header">
-      <h2 id="development">{{'Product Development' | upcase}}</h2>
-      <div class="heading-outline"><h2>{{'Product Development' | upcase}}</h2></div>
+        <h2 id="development">{{'Product Development' | upcase}}</h2>
+        <div class="heading-outline"><h2>{{'Product Development' | upcase}}</h2></div>
   </div>
 </div>
 
@@ -68,58 +68,59 @@
 
 
 <!-- Praises -->
+
 <section id="praises" class="py-5">
-  <div class="container-fluid">
-    <h4 class="d-flex col-lg-8 offset-2">{{'Recent praises' | upcase}}</h4>
+  <div class="praises carousel carousel-slide" id="praise-carousel" data-ride="carousel" data-interval="false">
 
-    <div class="praises my-4">
+  <div class="slider-nav" id="the-previous-one">
+    <a href="#praise-carousel" role="button" data-slide="next">
+      <div>A
+        <div id="horizontal-line-left"></div><div class="arrow-right" id="previous-arrow"></div>
+        PREVIOUS ONE
+     </div>
+    </a>
+  </div>
 
+  <div class="praise mb-4">
+    <h4>{{'Recent praises' | upcase }}</h4>
+
+    <div class="carousel-inner">
       {%for praise in site.data.praises%}
-
-        <!-- Arrow previous -->
-        <div id="the-previous-one" class="slider-nav col-lg-1 d-flex align-items-center">
-          <div>
-            <div id="horizontal-line-left"></div>
-            <div class="arrow-left" id="previous-arrow"></div>
-            <div>
-              A PREVIOUS ONE
-            </div>
-          </div>
+      {% if forloop.first %}{% assign active = 'active visible' %}
+      {% else %}{% assign active = '' %}
+      {% endif %}
+      <div class="custom-card card-praise carousel-item {{active}}">
+        <div class="card-praise-header">
+          <div>{{ praise.en.service }}</div>
         </div>
-
-        <!-- "praise" -->
-        <div class="custom-card p-4 col-lg-8 offset-1">
-          <div class="card-praise-header">{{ praise.en.service }}</div>
-          <div class="row">
-              <div class="card-praise-picture col-3">
-                <img src="/assets/{{praise.picture}}" alt="{{praise.name}}">
+          <div class="card-praise-body">
+            <!-- <div> -->
+              <div class="praise-praiser"> <!-- colonne -->
+                <div class="card-praise-picture"><img src="/assets/{{praise.picture}}" alt="{{praise.name}}"></div>
+                <div class="card-praise-signature mt-3">
+                  <strong class="praise-name">{{praise.name}}</strong>, {{praise.en.role}}, {{praise.en.company}}
+                </div>
               </div>
-              <div class="col-9">
-                <div class="card-praise-text">
-                  {{praise.en.text}}
-                  </div>
-                <div class="card-praise-signature mt-3"><strong class="praise-name">- {{praise.name}}</strong>, {{praise.en.role}}, {{praise.en.company}}</div>
-              </div>
-            </div>
-          </div>
-
-        <!-- "Arrow next" -->
-          <div id="another-one" class="slider-nav col-lg-2 offset-1 d-flex align-items-center">
-            <div>
-              <div id="horizontal-line-right"></div>
-              <div class="arrow-right" id="next-arrow"></div>
-              <div>
-                AN <br> OTHER ONE
-              </div>
-            </div>
-          </div>
-
+            <!-- </div> -->
+          <div class="card-praise-text">{{praise.en.text}}</div>
         </div>
-
+      </div>
       {%endfor%}
     </div>
   </div>
+
+
+
+  <div class="slider-nav" id="another-one">
+    <a href="#praise-carousel" role="button" data-slide="next">
+        <div>ANOTHER
+          <div id="horizontal-line-right"></div><div class="arrow-right" id="next-arrow"></div>
+        ONE</div>
+    </a>
+  </div>
+  </div>
 </section>
+
 
 
 <!-- Product growth -->
