@@ -97,8 +97,8 @@
 
 <div class="container-fluid" id="product-dev-header-background">
   <div class="container" id="product-dev-header">
-      <h2 id="development">PRODUCT DEVELOPMENT</h2>
-      <div class="heading-outline"><h2>PRODUCT DEVELOPMENT</h2></div>
+        <h2 id="development">PRODUCT DEVELOPMENT</h2>
+        <div class="heading-outline"><h2>PRODUCT DEVELOPMENT</h2></div>
   </div>
 </div>
 
@@ -238,60 +238,79 @@
 
 
 <!-- Praises -->
+
 <section id="praises" class="py-5">
-  <div class="container-fluid">
-    <h4 class="d-flex col-lg-8 offset-2">RECENT PRAISES</h4>
+  <div class="praises carousel carousel-slide" id="praise-carousel" data-ride="carousel" data-interval="false">
 
-    <div class="praises my-4">
+  <div class="slider-nav" id="the-previous-one">
+    <a href="#praise-carousel" role="button" data-slide="next">
+      <div>A
+        <div id="horizontal-line-left"></div><div class="arrow-right" id="previous-arrow"></div>
+        PREVIOUS ONE
+     </div>
+    </a>
+  </div>
 
+  <div class="praise mb-4">
+    <h4>RECENT PRAISES</h4>
+
+    <div class="carousel-inner">
       
-
-        <!-- Arrow previous -->
-        <div id="the-previous-one" class="slider-nav col-lg-1 d-flex align-items-center">
-          <div>
-            <div id="horizontal-line-left"></div>
-            <div class="arrow-left" id="previous-arrow"></div>
-            <div>
-              A PREVIOUS ONE
-            </div>
-          </div>
+      
+      <div class="custom-card card-praise carousel-item active visible">
+        <div class="card-praise-header">
+          <div>Digital Strategy</div>
         </div>
-
-        <!-- "praise" -->
-        <div class="custom-card p-4 col-lg-8 offset-1">
-          <div class="card-praise-header">Digital Strategy</div>
-          <div class="row">
-              <div class="card-praise-picture col-3">
-                <img src="/assets/guillaume.jpeg" alt="Guillaume Grassiant">
+          <div class="card-praise-body">
+            <!-- <div> -->
+              <div class="praise-praiser"> <!-- colonne -->
+                <div class="card-praise-picture"><img src="/assets/guillaume.jpeg" alt="Guillaume Grassiant"></div>
+                <div class="card-praise-signature mt-3">
+                  <strong class="praise-name">Guillaume Grassiant</strong>, General Manager, u92
+                </div>
               </div>
-              <div class="col-9">
-                <div class="card-praise-text">
-                  I’ve had the opportunity to work with Alex on multiple strategic projects (eCom, CRM).
+            <!-- </div> -->
+          <div class="card-praise-text">I’ve had the opportunity to work with Alex on multiple strategic projects (eCom, CRM).
 What I’ve liked the most was his ability to help us change our “traditional” web agency approach to a “product” mindset in a very short period of time.
-
-                  </div>
-                <div class="card-praise-signature mt-3"><strong class="praise-name">- Guillaume Grassiant</strong>, General Manager, u92</div>
-              </div>
-            </div>
-          </div>
-
-        <!-- "Arrow next" -->
-          <div id="another-one" class="slider-nav col-lg-2 offset-1 d-flex align-items-center">
-            <div>
-              <div id="horizontal-line-right"></div>
-              <div class="arrow-right" id="next-arrow"></div>
-              <div>
-                AN <br> OTHER ONE
-              </div>
-            </div>
-          </div>
-
+</div>
         </div>
-
+      </div>
+      
+      
+      <div class="custom-card card-praise carousel-item ">
+        <div class="card-praise-header">
+          <div>User research, Digital Analytics</div>
+        </div>
+          <div class="card-praise-body">
+            <!-- <div> -->
+              <div class="praise-praiser"> <!-- colonne -->
+                <div class="card-praise-picture"><img src="/assets/js.jpeg" alt="Jean-Sebastien"></div>
+                <div class="card-praise-signature mt-3">
+                  <strong class="praise-name">Jean-Sebastien</strong>, Director of New Products, Moment Factory
+                </div>
+              </div>
+            <!-- </div> -->
+          <div class="card-praise-text">I’ve know Alex for many years and worked with him twice. One thing that stands out is how sharp intellect that enables him to quickly find the causes of any problem. Another is that he has a great work ethic and can deliver when needed.
+His passion for product development and customer experience is undeniable.
+</div>
+        </div>
+      </div>
       
     </div>
   </div>
+
+
+
+  <div class="slider-nav" id="another-one">
+    <a href="#praise-carousel" role="button" data-slide="next">
+        <div>ANOTHER
+          <div id="horizontal-line-right"></div><div class="arrow-right" id="next-arrow"></div>
+        ONE</div>
+    </a>
+  </div>
+  </div>
 </section>
+
 
 
 <!-- Product growth -->
@@ -476,7 +495,9 @@ What I’ve liked the most was his ability to help us change our “traditional�
 
 
 <div class="footer">
-  Alexandre Cayla 2019
+  <div class="container d-flex justify-content-end">
+    Alexandre Cayla 2019
+  </div>
 </div>
 
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>

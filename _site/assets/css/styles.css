@@ -71,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   font-family: "Akzidenz Light Condensed";
-  font-size: 2.5rem; }
+  font-size: calc(1.5rem + 1vw); }
   .main-nav a {
     text-align: right;
     color: #202528;
@@ -85,8 +85,8 @@
 a.nav-logo {
   display: block;
   font-family: "Akzidenz Extra Bold Condensed";
+  font-size: calc(1.75rem + 1vw);
   font-weight: 700;
-  font-size: 3.5rem;
   line-height: 0.75;
   color: #202528; }
   a.nav-logo:hover {
@@ -96,7 +96,7 @@ a.nav-logo {
 #global-tagline {
   font-family: "Akzidenz Bold Condensed";
   line-height: 0.7;
-  font-size: 2rem; }
+  font-size: calc(1rem + 1vw); }
   #global-tagline div {
     text-align: right; }
 
@@ -175,7 +175,7 @@ h3, h4 {
   background-color: #0e5f4c;
   color: #f8f9fa; }
   .services h3 {
-    font-size: 4rem;
+    font-size: calc(2rem + 1vw);
     font-family: "Akzidenz Extra Bold Condensed";
     line-height: 0.7;
     margin-top: 3rem; }
@@ -193,16 +193,18 @@ h3, h4 {
 #product-dev-header {
   position: relative; }
   #product-dev-header h2 {
-    font-size: 5rem;
+    font-size: calc(3.25rem + 1vw);
     color: #202528;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    line-height: 0.8; }
 
 #product-growth-header {
   position: relative; }
   #product-growth-header h2 {
-    font-size: 5rem;
+    font-size: calc(3.25rem + 1vw);
     color: #f8f9fa;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    line-height: 0.8; }
 
 .heading-outline {
   font-size: 5rem;
@@ -215,19 +217,12 @@ h3, h4 {
   z-index: -1; }
 
 #praises {
-  background-color: #0f1500; }
+  background-color: #0f1500;
+  display: flex; }
   #praises h4 {
     font-size: 4rem;
     color: #0e5f4c;
-    margin-bottom: -45px; }
-
-.delibs {
-  display: flex;
-  overflow-x: scroll; }
-
-.praises {
-  display: flex;
-  overflow: hidden; }
+    margin-bottom: -23px; }
 
 .custom-card {
   color: #202528;
@@ -236,6 +231,10 @@ h3, h4 {
   border-radius: 3px;
   padding: 15px;
   margin-left: 15px; }
+
+.delibs {
+  display: flex;
+  overflow-x: scroll; }
 
 .card-deliverable {
   min-width: 250px;
@@ -255,10 +254,31 @@ h3, h4 {
   color: #202528; }
   .card-heading:hover {
     text-decoration: none;
-    color: #cbfe05; }
+    color: #0e5f4c; }
 
 .card-deliverable-body {
   font-size: 1.15rem; }
+
+.praises {
+  display: flex;
+  overflow: hidden;
+  width: 100%; }
+
+.praise {
+  margin: auto;
+  z-index: 10; }
+  .praise h4 {
+    margin-left: 2%; }
+
+.card-praise {
+  max-width: 1024px;
+  margin: auto; }
+  @media screen and (max-width: 375px) {
+    .card-praise {
+      min-width: 320px;
+      max-width: 80%; }
+      .card-praiseimg {
+        width: 30%; } }
 
 .card-praise-header {
   font-family: 'Akzidenz Bold Condensed';
@@ -266,22 +286,48 @@ h3, h4 {
   border-bottom: 1px solid #202528;
   margin-bottom: 1.5rem; }
 
+.card-praise-body {
+  display: flex; }
+  @media screen and (max-width: 1020px) {
+    .card-praise-body {
+      flex-wrap: wrap;
+      min-width: 250px; } }
+
+.praise-praiser {
+  width: 29%;
+  min-width: 250px; }
+  @media screen and (max-width: 1020px) {
+    .praise-praiser {
+      width: 100%;
+      display: flex;
+      align-items: flex-end; } }
+
 .card-praise-picture img {
   width: 100%;
   border-radius: 3px; }
 
-.card-praise-text {
-  font-family: 'Akzidenz Light Italic';
-  font-size: 1.5rem; }
-
 .card-praise-signature {
   font-family: 'Akzidenz Light Condensed';
-  text-align: right;
+  line-height: 1;
   font-size: 1.35rem; }
+  @media screen and (max-width: 1020px) {
+    .card-praise-signature {
+      margin-left: 20px; } }
 
 .praise-name {
   font-family: 'Akzidenz Bold Condensed';
   font-size: 1.25rem; }
+
+.card-praise-text {
+  font-family: 'Akzidenz Light Italic';
+  font-size: 1.5rem;
+  padding: 20px 10px 10px 20px; }
+  @media screen and (max-width: 375px) {
+    .card-praise-text {
+      font-size: 1.15rem; } }
+  @media screen and (max-width: 800px) {
+    .card-praise-text {
+      font-size: 1.35rem; } }
 
 .card-project {
   background-color: white; }
@@ -291,34 +337,42 @@ h3, h4 {
   font-family: "Akzidenz Bold Condensed";
   font-size: 4rem;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  position: relative;
   align-items: center; }
 
 #the-previous-one {
-  text-align: right;
-  left: -5%; }
-  #the-previous-one:hover {
-    left: 0; }
-  #the-previous-one div {
-    position: relative; }
+  transform: rotateY(180deg); }
+  #the-previous-one a {
+    color: #0e5f4c; }
+    #the-previous-one a:hover {
+      position: absolute;
+      text-decoration: none;
+      right: 0px; }
+  @media screen and (max-width: 760px) {
+    #the-previous-one {
+      display: none; } }
 
 #horizontal-line-left {
   width: 100%;
-  position: absolute;
-  left: 10%;
-  top: 72px;
+  position: relative;
+  right: 10%;
   border-bottom: 1px solid #f8f9fa; }
 
 #horizontal-line-right {
-  width: 80%;
-  position: absolute;
+  width: 225px;
+  position: relative;
   right: 10%;
-  top: 72px;
   border-bottom: 1px solid #f8f9fa; }
 
-#another-one:hover {
-  right: 8%; }
-#another-one div {
-  position: relative; }
+#another-one a {
+  color: #0e5f4c; }
+  #another-one a:hover {
+    text-decoration: none;
+    position: absolute;
+    right: 0px; }
 
 .arrow-left {
   width: 0;
@@ -328,9 +382,9 @@ h3, h4 {
   border-right: 5px solid #f8f9fa; }
 
 #previous-arrow {
-  position: absolute;
-  left: 8%;
-  top: 66px; }
+  position: relative;
+  left: 90%;
+  top: -5px; }
 
 .arrow-right {
   width: 0;
@@ -340,9 +394,9 @@ h3, h4 {
   border-left: 5px solid #f8f9fa; }
 
 #next-arrow {
-  position: absolute;
-  left: 70%;
-  top: 66px; }
+  position: relative;
+  left: 90%;
+  top: -5px; }
 
 .project-grid {
   display: grid;
