@@ -1,17 +1,14 @@
 ---
-layout: default
+layout: post
 ---
+Over the past year, I've had the luxury of mainly focusing on projects that I wanted to do. 
 
-# On purpose
+Obviously, things are never that simple (I still had bills to pay), so I taught, did some consluting work, etc. But, overall, I still had time to pursue my own projects and to try to make the most out of them. 
 
-Over the past year, I indulged in quite a few luxuries: I travelled around the world, but most importantly, I mainly focused on projects that I wanted to do. 
-
-Obviously, things were not that simple. I still had bills to pay, so I taught, did some consluting work, etc. But I still had time to pursue my own projects and try to make the most of them. 
-
-This forced me to have to answer two questions: why was I doing what I was foing? And what did I want to accomplish? I short, if I wanted to use my time meaningfully, what was my purpose? 
+This forced me to have to answer *"hard"* questions: why was I doing what I was doing? What did I want to accomplish? I short, if I wanted to use my time meaningfully, what was my purpose? 
 
 
-
+---
 
 * What was I selling? 
 * What did I want to do? 
