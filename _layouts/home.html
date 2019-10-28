@@ -1,41 +1,19 @@
-{% include head.html %}
 
-<div class="logo-header">
-  <div id="first-name">ALEXANDRE</div>
-  <div id="last-name">CAYLA</div>
-  <div id="tagline" class="d-flex align-items-center">
-    <div>
-      Digital product <span style="color:#cbfe07;">development</span> <br> and growth
-    </div>
-  </div>
-</div>
+{% include header-home.html %}
 
-
-<div id="nav-home" class="container mt-4">
-  <div class="home-nav-item">Bio</div>
-  <div class="d-flex">
-    <div><a href="#" class="home-nav-item">Projects</a></div>
-    <div><a href="#" class="home-nav-item">Writing</a></div>
-    <div><a href="/contact" class="home-nav-item">Get in touch</a></div>
-  </div>
-</div>
-<div class="container">
-  <div id="line" class="container"></div>
-  <div id="arrow-down"></div>
-</div>
-
+<!-- me -->
 
 <section class="me">
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-8 d-flex align-items-end">
+        <div class="col-lg-8 col-sm-7 d-flex align-items-end">
           <div>
             {{content}}
           </div>
         </div>
-        <div class="col-4">
-          <img src="/assets/moi.png" alt="Alexandre Cayla" class="img-fluid img-test">
+        <div class="col-lg-4 col-sm-5" id="img-home">
+          <img src="/assets/moi.png" alt="Alexandre Cayla" class="img-fluid">
         </div>
       </div>
     </div>
@@ -47,8 +25,8 @@
 
 <div class="container-fluid" id="product-dev-header-background">
   <div class="container" id="product-dev-header">
-      <h2 id="development">{{'Product Development' | upcase}}</h2>
-      <div class="heading-outline"><h2>{{'Product Development' | upcase}}</h2></div>
+        <h2 id="development">{{'Product Development' | upcase}}</h2>
+        <div class="heading-outline"><h2>{{'Product Development' | upcase}}</h2></div>
   </div>
 </div>
 
@@ -74,7 +52,7 @@
           {% for deliverable in deliverables%}
             <div class="custom-card card-deliverable">
               <div class="card-deliverable-header">
-                <h5>{{deliverable.name | capitalize}}</h5>
+                <h5 class="card-heading">{{deliverable.name | capitalize}}</h5>
               </div>
               <div class="card-deliverable-body">
                 <div>{{deliverable.description}}</div>
@@ -90,27 +68,59 @@
 
 
 <!-- Praises -->
-<section id="praises" class="py-5">
-  <div class="container">
-    <h4>{{'Recent praises' | upcase}}</h4>
 
-    <div class="delibs my-4">
+<section id="praises" class="py-6">
+  <div class="praises carousel carousel-slide" id="praise-carousel" data-ride="carousel" data-interval="false">
+
+  <div class="slider-nav" id="the-previous-one">
+    <a href="#praise-carousel" role="button" data-slide="next">
+      <div>A
+        <div id="horizontal-line-left"></div><div class="arrow-right" id="previous-arrow"></div>
+        PREVIOUS ONE
+     </div>
+    </a>
+  </div>
+
+  <div class="praise mb-4">
+    <h4>{{'Recent praises' | upcase }}</h4>
+
+    <div class="carousel-inner">
       {%for praise in site.data.praises%}
-
-        <div class="custom-card col-8 p-4">
-          <!-- <div class="card-praise-header">{{praise.en.service | upcase}}</div> -->
-          <div class="row">
-            <div class="col-3 card-praise-picture"><img src="/assets/{{praise.picture}}" alt="{{praise.name}}"></div>
-            <div class="col-9">
-              <div class="card-praise-text">" {{praise.en.text}} "</div>
-              <div class="card-praise-signature mt-3">- <strong>{{praise.name}}</strong>, {{praise.en.role}}, {{praise.en.company}}</div>
-            </div>
-          </div>
+      {% if forloop.first %}{% assign active = 'active visible' %}
+      {% else %}{% assign active = '' %}
+      {% endif %}
+      <div class="custom-card card-praise carousel-item {{active}}">
+        <div class="card-praise-header">
+          <div>{{ praise.en.service }}</div>
         </div>
+          <div class="card-praise-body">
+            <!-- <div> -->
+              <div class="praise-praiser"> <!-- colonne -->
+                <div class="card-praise-picture"><img src="/assets/{{praise.picture}}" alt="{{praise.name}}"></div>
+                <div class="card-praise-signature mt-3">
+                  <strong class="praise-name">{{praise.name}}</strong>, {{praise.en.role}}, {{praise.en.company}}
+                </div>
+              </div>
+            <!-- </div> -->
+          <div class="card-praise-text">{{praise.en.text}}</div>
+        </div>
+      </div>
       {%endfor%}
     </div>
   </div>
+
+
+
+  <div class="slider-nav" id="another-one">
+    <a href="#praise-carousel" role="button" data-slide="next">
+        <div>ANOTHER
+          <div id="horizontal-line-right"></div><div class="arrow-right" id="next-arrow"></div>
+        ONE</div>
+    </a>
+  </div>
+  </div>
 </section>
+
 
 
 <!-- Product growth -->
@@ -130,7 +140,7 @@
 
     {% assign growth_services = site.services | where: 'category', 'growth'%}
 
-      {% for service in development_services %}
+      {% for service in growth_services %}
         <h3>{{ service.name | upcase }}</h3>
 
         <p>{{service.content}}</p>
@@ -143,7 +153,7 @@
           {% for deliverable in deliverables%}
             <div class="custom-card card-deliverable">
               <div class="card-deliverable-header">
-                <h5>{{deliverable.name | capitalize}}</h5>
+                <h5 class="card-heading">{{deliverable.name | capitalize}}</h5>
               </div>
               <div class="card-deliverable-body">
                 <div>{{deliverable.description}}</div>
@@ -159,7 +169,14 @@
 </section>
 
 <section class="container my-4">
-  <div class="btn btn-primary">Get in touch</div>
+
+  <div class="cta">
+    <p class="ready">Ready?</p>
+    <div>
+      <a href="/contact" class="btn btn-custom px-4">Get in touch</a>
+    </div>
+  </div>
+
 </section>
 
 

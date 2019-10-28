@@ -1,7 +1,9 @@
 <div class="footer">
-  Alexandre Cayla {{ 'now' | date: "%Y" }}
+  <div class="container d-flex justify-content-end">
+    Alexandre Cayla {{ 'now' | date: "%Y" }}
+  </div>
 </div>
-
+</div> <!-- Page container closing div -->
 <script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
 <script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
 <script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>

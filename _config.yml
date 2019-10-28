@@ -28,6 +28,8 @@ collections:
     output: true
   projects:
     output: true
+  posts:
+    output: true
 
 exclude: []
 

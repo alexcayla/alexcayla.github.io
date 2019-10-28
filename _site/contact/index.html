@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -28,30 +29,119 @@
     </head>
   <body>
 
+
 <div class="nav-global">
-  <div class="nav-logo">
-    <a href="/">ALEXANDRE <br> CAYLA</a>
-  </div>
-  <div class="nav-items">
-    <a href="/">Home</a>
-    <a href="/services">Services</a>
-    <a href="/projects">Projects</a>
-    <a href="">Writings</a>
-    <a href="">Contact</a>
+  <div class="container">
+    <div class="d-flex justify-content-between">
+      <a href="/" class="nav-logo">
+        <div>ALEXANDRE</div>
+        <div>CAYLA</div>
+      </a>
+
+      <div id="global-tagline">
+        <div>DIGITAL PRODUCT</div>
+        <div class="accent">DEVELOPMENT</div>
+        <div>AND GROWTH</div>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="container d-flex justify-content-end">
+  <div class="main-nav">
+    <!-- <a href="/services">Services</a> -->
+    <div class="d-flex">
+      <div><a href="/projects" class="main-nav-item">Projects</a></div>
+      <div><a href="/posts" class="main-nav-item">Writings  </a></div>
+      <div><a href="/contact" class="main-nav-item">Get in touch</a></div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <div class="container">
-<h1></h1>
 
-  
+
+  <div class="container">
+    <div id="spacer" class="container"></div>
+  </div>
+
+  <h1></h1>
+
+    <div class="container">
+  <h1>Get in touch</h1>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="col-11 pl-0">
+        <p>Thanks for considering working together!</p>
+
+        <p>I’m currently <code>available</code> and accepting new work for <code>December 2019</code>.</p>
+
+        <p>Tell me little bit about your needs and I’m sure we’ll find ways to get your project to the next level.</p>
+
+        <a href="#" id="hesitate">Not sure yet?</a>
+
+        <div id="doit" class="hidden">
+          <img src="https://media.giphy.com/media/GcSqyYa2aF8dy/giphy.gif" alt="do it!">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 form-contact">
+      <form action="https://submit-form.com/I6bhyUvNs2-31qHisw1sT" target="_self">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Tim Cook" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="tim@apple.com" name="email">
+        </div>
+
+
+        <div class="form-group">
+          <label for="project-description">Add few words about your project</label>
+          <textarea class="form-control" id="project-description" rows="3" name="project"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-custom-sm">Submit</button>
+        </div>
+      </form>
+    </div>
+    </div>
+
+</div>
+
+<style>
+  .hidden{
+    display: none;
+  }
+</style>
+
+<script>
+
+
+
+  document.getElementById('hesitate').addEventListener('click', function(){
+    document.getElementById('doit').classList.toggle('hidden');
+  });
+</script>
+
+
+
 </div>
 
 <div class="footer">
-  Alexandre Cayla 2019
+  <div class="container d-flex justify-content-end">
+    Alexandre Cayla 2019
+  </div>
 </div>
-
+</div> <!-- Page container closing div -->
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
