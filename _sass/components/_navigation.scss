@@ -30,12 +30,13 @@ $nav-font: 'Akzidenz Light Condensed';
   a {
     text-align: right;
     color: $black;
-    margin-left: 1em;
+    margin-left: 1.5rem;
     &:hover, &.active {
       border-bottom: 4px solid $green;
     }
-    &:last-child {
-      // margin-right: 1em;
+
+    @media screen and (max-width: 375px){
+      margin-left: 0.5rem;
     }
   }
 }

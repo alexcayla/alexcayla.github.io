@@ -3,7 +3,7 @@ name: Tincan
 description: Tincan is a remote recording tool that allows podcasters to record phone conversations that don't sound like phone calls. 
 order: 3
 type: product
-layout: default
+layout: post
 languages: 
     - TypeScript
     - HTML & CSS
@@ -11,7 +11,6 @@ frameworks:
     - React Native
 ---
 
-# Tincan
 Record remote interviews, without compromises.
 
 ## The problem

@@ -3,7 +3,7 @@ name: Custom Jekyll Theme (alexcayla.com)
 description: 
 order: 4
 type: product
-layout: default
+layout: post
 languages: 
     - Ruby
     - HTML & CSS

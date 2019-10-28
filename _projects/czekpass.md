@@ -1,9 +1,10 @@
 ---
 name: czekpass
-description: Czekpass was concieved as a frictionless 
+title: Czekpass
+description: Czekpass was concieved as a frictionless purchase verification platform that allowed merchants to confidently offer perks to specific sets of customers 
 order: 1
 type: product
-layout: default
+layout: post
 languages: 
     - Ruby
     - HTML & CSS
@@ -13,10 +14,8 @@ frameworks:
     - Bootstrap
 ---
 
-# Czekpass
-Czekpass is a frictionless purchase verification platform to offer perks to specific sets of customers 
 
-It allows for business owners to without having to develop CRM systems or having to integrate their point-of-sale system to an external platform. 
+
 
 ## Idea
 
@@ -27,3 +26,6 @@ The idea for Czekpass came from a very simple problem: multiple students from Le
 Czekpass, digital loyalty platform for nomads. 
 
 ## Challenges
+
+
+It allows for business owners to without having to develop CRM systems or having to integrate their point-of-sale system to an external platform. 

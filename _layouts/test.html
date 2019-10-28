@@ -1,0 +1,24 @@
+<style>
+  .test-main{
+    min-height: 100vh;
+    position: relative;
+  }
+  .footer-test{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+
+<div class="test-main">
+
+{% include header.html %}
+
+
+  {{content}}
+
+
+<div class="footer-test">
+{% include footer.html %}
+</div>
+</div>
