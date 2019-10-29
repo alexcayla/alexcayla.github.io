@@ -37,16 +37,7 @@ The app was designed to be as simple as possible around two clear storues:
 
 And, when the organizer is ready to produce and episode, listen back, annotate or share, the recordings can be accessed through the app or exported to the drive of their choice, as individual tracks or together. 
 
-    A couple of flows
-    -> Joining with the invite code
-    -> Creating a conversation -> Back to the list of conversations. 
-
-
 ## Challenges
-Tincan was intended to be a weekend project; it wasn't. 
-
-As the app was to rely on external services and APIs for most of the transformation activities (leveling, sticthing, etc.), the main foreseen challenge had conversation recoding. 
-
 While Apple allows iPhones to record conversations, it does not allow *phone calls* to be recorded. This is the reason why most "call recording apps" call a third number where the conversation is recorded. To sidestep this issue and be able to record conversations, we had to create VOIP calls between all participants. 
 
 This turned out to be the most challenging part of the development. The documentation for the library was poor and inaccurate, it made use of undocumented APIs in Swift and Objective-C. 
@@ -63,6 +54,5 @@ Tincan is currently in alpha, betas invites are expected to be sent in January 2
 * In browser "app-less" recording flow (as a progressive web app)
 * Annotations and feedback on the finised product (send to past guests)
 * DAW (Digital Audio Workstation) integration
-* Etc. 
 
 
