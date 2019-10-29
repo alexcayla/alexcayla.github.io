@@ -13,4 +13,3 @@ frameworks:
     - Bootstrap
 ---
 
-This project was looooong.
