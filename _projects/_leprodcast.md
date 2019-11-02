@@ -14,7 +14,7 @@ frameworks:
 ---
 
 ## The project 
-prod. is a podcast on digital product development. It was founded on the idea that *how* a product was made was as interesting (if not more), than the idea behind them. 
+prod. is a podcast on digital product development. It was founded on the idea that *how* a product was made was as interesting (if not more), than the business they were part of. 
 
 In short, that makers 
 
