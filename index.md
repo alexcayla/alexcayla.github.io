@@ -1,4 +1,5 @@
 ---
+name: home
 layout: home
 title: Home
 livereload: true
