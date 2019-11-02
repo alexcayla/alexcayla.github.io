@@ -39,3 +39,15 @@
   src: url('/assets/fonts/AkzidenzGrotesk-ExtraBoldCond.otf');
   font-weight: extra-bold;
 }
+
+// Font variables
+
+$heading-font: "Akzidenz Extra Bold Condensed";
+$secondary-heading-font: 'Akzidenz Bold Condensed';
+
+$nav-font: 'Akzidenz Light Condensed';
+$quote-font: 'Akzidenz Light Italic';
+
+/* custom vars */
+$custom-font-size: 20px;
+$homepage-font: 1.25rem;

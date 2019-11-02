@@ -50,9 +50,9 @@
         <div class="delibs mb-4">
 
           {% for deliverable in deliverables%}
-            <div class="custom-card card-deliverable">
+            <div class="card-custom card-deliverable">
               <div class="card-deliverable-header">
-                <h5 class="card-heading">{{deliverable.name | capitalize}}</h5>
+                <h5 class="card-custom-heading">{{deliverable.name | capitalize}}</h5>
               </div>
               <div class="card-deliverable-body">
                 <div>{{deliverable.description}}</div>
@@ -67,60 +67,7 @@
 </section>
 
 
-<!-- Praises -->
-
-<section id="praises" class="py-6">
-  <div class="praises carousel carousel-slide" id="praise-carousel" data-ride="carousel" data-interval="false">
-
-  <div class="slider-nav" id="the-previous-one">
-    <a href="#praise-carousel" role="button" data-slide="next">
-      <div>A
-        <div id="horizontal-line-left"></div><div class="arrow-right" id="previous-arrow"></div>
-        PREVIOUS ONE
-     </div>
-    </a>
-  </div>
-
-  <div class="praise mb-4">
-    <h4>{{'Recent praises' | upcase }}</h4>
-
-    <div class="carousel-inner">
-      {%for praise in site.data.praises%}
-      {% if forloop.first %}{% assign active = 'active visible' %}
-      {% else %}{% assign active = '' %}
-      {% endif %}
-      <div class="custom-card card-praise carousel-item {{active}}">
-        <div class="card-praise-header">
-          <div>{{ praise.en.service }}</div>
-        </div>
-          <div class="card-praise-body">
-            <!-- <div> -->
-              <div class="praise-praiser"> <!-- colonne -->
-                <div class="card-praise-picture"><img src="/assets/{{praise.picture}}" alt="{{praise.name}}"></div>
-                <div class="card-praise-signature mt-3">
-                  <strong class="praise-name">{{praise.name}}</strong>, {{praise.en.role}}, {{praise.en.company}}
-                </div>
-              </div>
-            <!-- </div> -->
-          <div class="card-praise-text">{{praise.en.text}}</div>
-        </div>
-      </div>
-      {%endfor%}
-    </div>
-  </div>
-
-
-
-  <div class="slider-nav" id="another-one">
-    <a href="#praise-carousel" role="button" data-slide="next">
-        <div>ANOTHER
-          <div id="horizontal-line-right"></div><div class="arrow-right" id="next-arrow"></div>
-        ONE</div>
-    </a>
-  </div>
-  </div>
-</section>
-
+{% include praises.html%}
 
 
 <!-- Product growth -->
@@ -151,9 +98,9 @@
         <div class="delibs mb-4">
 
           {% for deliverable in deliverables%}
-            <div class="custom-card card-deliverable">
+            <div class="card-custom card-deliverable">
               <div class="card-deliverable-header">
-                <h5 class="card-heading">{{deliverable.name | capitalize}}</h5>
+                <h5 class="card-custom-heading">{{deliverable.name | capitalize}}</h5>
               </div>
               <div class="card-deliverable-body">
                 <div>{{deliverable.description}}</div>

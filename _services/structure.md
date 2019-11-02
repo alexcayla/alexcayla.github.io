@@ -3,6 +3,8 @@ name: structure
 category: growth
 ---
 
-Structure is about connecting the _what_ to the _how_. Once you know who you want to reach and where, in order to improve, you will need to keep track of what was a campaign's expected outcome and what to do if it fails. 
+Structure is about connecting the _what_ to the _how_. In short, once you know who you want to reach and where, you need to know how to do it and what to do if your efforts fail. 
 
-I help by establishing the steps that need to be carried out when planning a growth activity, by documenting growth activities and by carrying out campaigns with internal teams.
+I help you by establishing how campaigns and growth activities should be organized, executed and evaluated. As well as by having a clear idea of what to do next. 
+
+As the saying goes: "success is going from failure to failure without losing your enthusiasm". I want to help you fail quicker and better. 

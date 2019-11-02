@@ -2,9 +2,4 @@
 name: track
 category: growth
 ---
-
-Everyone claims to be data-driven. Yet, very few people are. 
-
-This is quite understandable: as digital channels multiply, people have to contend with app analytics, page analytics, social media analytics, tag managers, campaign tracking, etc. In short, things become very complicated, very quickly.
-
-To ensure that you can answer your most pressing questions, I architect and implement your analytics infrastructure, create dashboards and reports and provide instructions on how to properly tag and track your camapigns. 
+To ensure that you can answer your most pressing questions, I architect and implement your analytics infrastructure, create dashboards and reports and provide instructions on how to properly tag and track your campaigns. 

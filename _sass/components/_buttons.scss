@@ -1,0 +1,23 @@
+.btn-custom{
+  font-family: $secondary-heading-font;
+  font-size: 3rem !important;
+}
+
+.btn-custom-sm{
+  background-color: $yellow !important;
+  font-family: $secondary-heading-font;
+  font-size: 1.5rem !important;
+}
+
+
+
+.cta {
+  padding: 80px 0 80px 0;
+  p{
+    line-height: 1;
+  }
+  div {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
