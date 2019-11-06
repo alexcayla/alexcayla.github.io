@@ -15,6 +15,10 @@
   src: url("/assets/fonts/AkzidenzGrotesk-LightItalic.otf");
   font-weight: light-italic; }
 @font-face {
+  font-family: 'Akzidenz Condensed';
+  src: url("/assets/fonts/AkzidenzGrotesk-Cond.otf");
+  font-weight: condensed; }
+@font-face {
   font-family: 'Akzidenz Bold';
   src: url("/assets/fonts/AkzidenzGrotesk-Bold.otf");
   font-weight: bold; }
@@ -49,6 +53,10 @@
   font-family: 'Akzidenz Light Italic';
   src: url("/assets/fonts/AkzidenzGrotesk-LightItalic.otf");
   font-weight: light-italic; }
+@font-face {
+  font-family: 'Akzidenz Condensed';
+  src: url("/assets/fonts/AkzidenzGrotesk-Cond.otf");
+  font-weight: condensed; }
 @font-face {
   font-family: 'Akzidenz Bold';
   src: url("/assets/fonts/AkzidenzGrotesk-Bold.otf");
@@ -253,6 +261,10 @@ a.card:hover {
   src: url("/assets/fonts/AkzidenzGrotesk-LightItalic.otf");
   font-weight: light-italic; }
 @font-face {
+  font-family: 'Akzidenz Condensed';
+  src: url("/assets/fonts/AkzidenzGrotesk-Cond.otf");
+  font-weight: condensed; }
+@font-face {
   font-family: 'Akzidenz Bold';
   src: url("/assets/fonts/AkzidenzGrotesk-Bold.otf");
   font-weight: bold; }
@@ -338,6 +350,10 @@ a.card:hover {
   src: url("/assets/fonts/AkzidenzGrotesk-LightItalic.otf");
   font-weight: light-italic; }
 @font-face {
+  font-family: 'Akzidenz Condensed';
+  src: url("/assets/fonts/AkzidenzGrotesk-Cond.otf");
+  font-weight: condensed; }
+@font-face {
   font-family: 'Akzidenz Bold';
   src: url("/assets/fonts/AkzidenzGrotesk-Bold.otf");
   font-weight: bold; }
@@ -408,6 +424,10 @@ form > button {
   src: url("/assets/fonts/AkzidenzGrotesk-LightItalic.otf");
   font-weight: light-italic; }
 @font-face {
+  font-family: 'Akzidenz Condensed';
+  src: url("/assets/fonts/AkzidenzGrotesk-Cond.otf");
+  font-weight: condensed; }
+@font-face {
   font-family: 'Akzidenz Bold';
   src: url("/assets/fonts/AkzidenzGrotesk-Bold.otf");
   font-weight: bold; }
@@ -447,6 +467,9 @@ h1, h2 {
 h3, h4 {
   font-family: 'Akzidenz Extra Bold Condensed';
   color: #202528; }
+
+em {
+  color: #cbfe05; }
 
 /* ------------
   |   HP HERO  |
@@ -516,16 +539,38 @@ h3, h4 {
   padding-bottom: 60px;
   font-size: 1.25rem;
   background-color: #0e5f4c;
-  color: #f8f9fa; }
+  color: #f8f9fa;
+  padding-top: 35px; }
   .services h3 {
-    font-size: calc(2rem + 1vw);
+    font-size: 3rem;
     font-family: "Akzidenz Extra Bold Condensed";
     line-height: 0.7;
     margin-top: 3rem; }
   .services h4 {
-    font-family: "Akzidenz Extra Bold Condensed";
-    font-size: 3rem;
+    font-family: "Akzidenz Condensed";
+    font-size: 2rem;
+    color: #f8f9fa;
     margin-bottom: -14px; }
+    .services h4 span {
+      border-bottom: 1.5px solid #202528;
+      display: inline-block;
+      line-height: 0.85; }
+    .services h4:before {
+      color: #cbfe05;
+      content: "+";
+      font-family: "Akzidenz Light Condensed"; }
+
+.toggle-input {
+  display: none; }
+  .toggle-input:not(checked) ~ .toggle-content {
+    display: none; }
+
+.toggle-input:checked ~ .toggle-content {
+  display: flex; }
+.toggle-input:checked ~ .toggle-label h4:before {
+  content: "-   ";
+  color: #cbfe05;
+  font-family: "Akzidenz Light Condensed"; }
 
 #product-dev-header-background {
   background: linear-gradient(transparent 50%, #0e5f4c 50%) no-repeat; }
@@ -580,6 +625,53 @@ h3, h4 {
   @media screen and (max-width: 414px) {
     .project-grid {
       grid-template-columns: 1fr; } }
+
+.quote-huge {
+  width: 100vw;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: "Akzidenz Bold Condensed";
+  line-height: 1;
+  display: grid;
+  grid-template-rows: repeat(10, 10%);
+  grid-template-columns: repeat(100, 1%); }
+  @media screen and (max-width: 540px) {
+    .quote-huge {
+      display: none; } }
+
+#measure-twice {
+  font-size: 10vw;
+  grid-row: 1/4;
+  grid-column: 1/span 39;
+  position: relative; }
+
+#twice-once {
+  font-size: 10vw;
+  grid-row: 1/4;
+  grid-column: 38/span 10; }
+
+#twice-twice {
+  font-size: 10vw;
+  grid-row: 5/7;
+  grid-column: 37/ span 10;
+  position: relative; }
+
+#cut {
+  width: 37vw;
+  position: relative;
+  bottom: -16vw;
+  transform: rotate(-45deg);
+  border-bottom: 1px solid #f8f9fa; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    #cut {
+      right: 2vw; } }
+
+#cut-once {
+  grid-row: 6/10;
+  grid-column: 69/span 38;
+  font-size: 9.5vw;
+  margin-top: 35px; }
 
 .footer {
   display: flex;

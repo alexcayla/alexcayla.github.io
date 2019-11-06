@@ -1,4 +1,4 @@
-// -------
+  // -------
 // Imports
 // -------
 
@@ -30,6 +30,10 @@ h1, h2 {
 h3, h4 {
   font-family: 'Akzidenz Extra Bold Condensed';
   color: $black;
+}
+
+em {
+  color: $yellow;
 }
 
 /* ------------
@@ -123,21 +127,65 @@ h3, h4 {
   font-size: 1.25rem;
   background-color: $green;
   color: $light;
+  padding-top: 35px;
 
   h3 {
-    font-size: calc(2rem + 1vw);
-    // 4rem;
+    font-size: 3rem;
     font-family: $heading-font;
     line-height: 0.7;
     margin-top: 3rem;
   }
 
   h4 {
-    font-family: $heading-font;
-    font-size: 3rem;
+    font-family: $cta-font;
+    font-size: 2rem;
+    color: $light;
     margin-bottom: -14px;
+    span{
+      border-bottom: 1.5px solid $black;
+      display: inline-block;
+      line-height: 0.85;
+    }
+
+    &:before {
+      color: $yellow;
+      content: "+";
+      font-family: $nav-font;
+    }
   }
 }
+
+  .toggle-input {
+    display: none; //Hide input element
+
+    &:not(checked) ~ .toggle-content {
+      display: none; //Hide content
+    }
+  }
+
+  //Display content when checkbox is "checked"
+  .toggle-input:checked {
+    ~ .toggle-content {
+      display: flex;
+    }
+
+    ~ .toggle-label {
+      h4{
+        &:before {
+          content: "-   "; //Change label's '+' to '-' when checked
+          color: $yellow;
+          font-family: $nav-font;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
 
 #product-dev-header-background {
   background: linear-gradient(transparent 50%, #0e5f4c 50%) no-repeat;
@@ -215,7 +263,62 @@ h3, h4 {
   }
 }
 
+// QUOTES
 
+  .quote-huge {
+    width: 100vw;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: $secondary-heading-font;
+    line-height: 1;
+    display: grid;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(100, 1%);
+
+    @media screen and (max-width: 540px){
+      display: none;
+    }
+  }
+
+#measure-twice{
+  font-size: 10vw;
+  grid-row: 1/4;
+  grid-column: 1/span 39;
+  position: relative;
+}
+
+#twice-once{
+  font-size: 10vw;
+  grid-row: 1/4;
+  grid-column: 38/span 10;
+}
+
+#twice-twice{
+  font-size: 10vw;
+  grid-row: 5/7;
+  grid-column: 37/ span 10;
+  position: relative;
+}
+
+#cut {
+  width: 37vw;
+  position: relative;
+  bottom: -16vw;
+  transform: rotate(-45deg);
+  border-bottom: 1px solid $light;
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    right: 2vw;
+  }
+}
+
+#cut-once{
+  grid-row: 6/10;
+  grid-column: 69/span 38;
+  font-size: 9.5vw;
+  margin-top: 35px;
+}
 
 // ------
 // FOOTER

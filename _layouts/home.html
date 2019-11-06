@@ -32,10 +32,22 @@
 
 <section id="services-dev" class="container-fluid services">
   <div class="container">
+      {{site.services | where: 'name', 'dev-intro'}}
+
+  </div>
+
+      <div class="quote-huge">
+        <div id="measure-twice">MEASURE</div>
+        <div id="twice-once">TWICE,</div>
+        <div id="twice-twice">TWICE,</div>
+        <div id="cut"></div>
+        <div id="cut-once">cut once</div>
+      </div>
+
+
+  <div class="container">
 
     <!-- <div class="row"> -->
-
-      {{site.services | where: 'name', 'dev-intro'}}
 
       {% assign development_services = site.services | where: 'category', 'development' | sort: 'order'%}
 
@@ -44,26 +56,38 @@
 
         <p>{{service.content}}</p>
 
-        <h4>{{ 'What you get' | upcase }}</h4>
-        {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
+        <div class="delib-toggle">
 
-        <div class="delibs mb-4">
+          <input type="checkbox" value="selected" id="d-delibs-{{forloop.index}}" class="toggle-input">
+          <label for="d-delibs-{{forloop.index}}" class="toggle-label">
+            <h4>
+              <span>
+                {{ 'What I do' | upcase }}
+              </span>
+            </h4>
+          </label>
 
-          {% for deliverable in deliverables%}
-            <div class="card-custom card-deliverable">
-              <div class="card-deliverable-header">
-                <h5 class="card-custom-heading">{{deliverable.name | capitalize}}</h5>
+
+          {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
+
+          <div role="toggle" class="delibs mb-4 toggle-content" >
+
+            {% for deliverable in deliverables%}
+              <div class="card-custom card-deliverable">
+                <div class="card-deliverable-header">
+                  <h5 class="card-custom-heading">{{deliverable.name | capitalize}}</h5>
+                </div>
+                <div class="card-deliverable-body">
+                  <div>{{deliverable.description}}</div>
+                </div>
               </div>
-              <div class="card-deliverable-body">
-                <div>{{deliverable.description}}</div>
-              </div>
-            </div>
-          {%endfor%}
+            {%endfor%}
 
+          </div>
         </div>
-
       {% endfor%}
   </div>
+
 </section>
 
 
@@ -92,10 +116,20 @@
 
         <p>{{service.content}}</p>
 
-        <h4>{{ 'What you get' | upcase }}</h4>
+        <div class="delib-toggle">
+
+        <input type="checkbox" value="selected" id="g-delibs-{{forloop.index}}" class="toggle-input">
+          <label for="g-delibs-{{forloop.index}}" class="toggle-label">
+            <h4>
+              <span>
+                {{ 'What I do' | upcase }}
+              </span>
+            </h4>
+          </label>
+
         {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
 
-        <div class="delibs mb-4">
+        <div class="delibs mb-4 toggle-content">
 
           {% for deliverable in deliverables%}
             <div class="card-custom card-deliverable">
@@ -110,6 +144,7 @@
 
         </div>
 
+      </div>
       {% endfor%}
 
   </div>
