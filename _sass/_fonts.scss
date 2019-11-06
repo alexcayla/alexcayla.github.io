@@ -22,6 +22,14 @@
   font-weight: light-italic;
 }
 
+
+@font-face {
+  font-family: 'Akzidenz Condensed';
+  src: url('/assets/fonts/AkzidenzGrotesk-Cond.otf');
+  font-weight: condensed;
+}
+
+
 @font-face {
   font-family: 'Akzidenz Bold';
   src: url('/assets/fonts/AkzidenzGrotesk-Bold.otf');
@@ -47,6 +55,8 @@ $secondary-heading-font: 'Akzidenz Bold Condensed';
 
 $nav-font: 'Akzidenz Light Condensed';
 $quote-font: 'Akzidenz Light Italic';
+
+$cta-font: 'Akzidenz Condensed';
 
 /* custom vars */
 $custom-font-size: 20px;
