@@ -58,7 +58,7 @@
 
         <div class="delib-toggle">
 
-          <input type="checkbox" value="selected" id="d-delibs-{{forloop.index}}" class="toggle-input">
+          <input type="checkbox" value="selected" id="d-delibs-{{forloop.index}}" class="toggle-input" data-analytics-action="services-toggle" data-analytics-label="{{service.name}}-delibs">
           <label for="d-delibs-{{forloop.index}}" class="toggle-label">
             <h4>
               <span>
@@ -118,7 +118,7 @@
 
         <div class="delib-toggle">
 
-        <input type="checkbox" value="selected" id="g-delibs-{{forloop.index}}" class="toggle-input">
+        <input type="checkbox" value="selected" id="g-delibs-{{forloop.index}}" class="toggle-input" data-analytics-action="services-toggle" data-analytics-label="{{service.name}}-delibs">
           <label for="g-delibs-{{forloop.index}}" class="toggle-label">
             <h4>
               <span>
@@ -155,7 +155,7 @@
   <div class="cta">
     <p class="ready">Ready?</p>
     <div>
-      <a href="/contact" class="btn btn-custom px-4">Get in touch</a>
+      <a href="/contact" class="btn btn-custom px-4" data-analytics-action="get-in-touch" data-analytics-label="footer">Get in touch</a>
     </div>
   </div>
 
