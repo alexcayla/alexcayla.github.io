@@ -449,6 +449,13 @@ form > button {
   padding: 1rem;
   font-size: 20px;
   padding: 2rem; }
+  .post-content em {
+    color: #0e5f4c;
+    font-weight: 600; }
+  .post-content mark {
+    color: #0e5f4c;
+    background-color: rgba(203, 254, 5, 0.4);
+    padding: 5px; }
 
 .post-title {
   font-size: calc(2rem + 3vw);
@@ -470,6 +477,14 @@ h3, h4 {
 
 em {
   color: #cbfe05; }
+
+mark {
+  background-color: rgba(14, 95, 76, 0.5) !important;
+  padding: 5px !important; }
+  mark a {
+    color: #202528 !important; }
+    mark a:hover {
+      color: #cbfe05 !important; }
 
 /* ------------
   |   HP HERO  |

@@ -36,6 +36,16 @@ em {
   color: $yellow;
 }
 
+mark{
+  background-color: rgba(14, 95, 76, 0.5) !important;
+  padding: 5px !important;
+  a {
+    color: $black !important;
+    &:hover {
+      color: $yellow !important;
+    }
+  }
+}
 /* ------------
   |   HP HERO  |
    ------------ */
