@@ -7,6 +7,17 @@
   padding: 1rem;
   font-size: $custom-font-size;
   padding: 2rem;
+
+  em {
+    color: $green;
+    font-weight: 600;
+  }
+
+  mark {
+     color: $green;
+     background-color: rgba($color: $yellow, $alpha: 0.4);
+     padding: 5px;
+  }
 }
 
 .post-title{

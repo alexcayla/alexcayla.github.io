@@ -9,6 +9,8 @@ languages:
     - HTML & CSS
 frameworks:
     - React Native
+website:
+    - www.lampli.ca/tincan
 ---
 
 Record remote interviews, without compromises.
