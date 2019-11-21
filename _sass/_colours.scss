@@ -3,7 +3,16 @@ $red:    #dc3545;
 $green: #0e5f4c;
 $black: #202528;
 $yellow: #cbfe05;
+$white: #ffffff;
 
 .accent{
   color: $yellow;
 }
+
+$theme-colors: (
+  "primary": $green,
+  "danger": #ff4136,
+  "custom": $yellow
+);
+
+$body-bg: $light;

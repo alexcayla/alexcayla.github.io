@@ -7,17 +7,16 @@ layout: category
   {% assign posts = site.posts | sort: 'order'%}
   {% for post in posts %}
 
-    <div class="custom-card card-project">
-      <div class="card-deliverable-header">
-        <h2>
-          <a href="{{post.url}}" class="card-heading">{{ post.title }}</a>
-        </h2>
+    <a href="{{post.url}}" class="card border-0">
+      <div class="card-custom card-post">
+        <div class="card-deliverable-header">
+          <h2 class="card-custom-heading">{{ post.title }}</h2>
+        </div>
+        <div class="card-deliverable-body">
+          {{post.excerpt}}
+        </div>
       </div>
-
-      <div class="card-deliverable-body">
-          <div>{{post.excerpt}}</div>
-      </div>
-    </div>
+    </a>
 
 {%endfor%}
 

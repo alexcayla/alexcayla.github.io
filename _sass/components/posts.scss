@@ -1,0 +1,35 @@
+@import './fonts';
+@import './colours';
+
+.post-content{
+  background-color: $white;
+  border-radius: 3px;
+  padding: 1rem;
+  font-size: $custom-font-size;
+  padding: 2rem;
+
+  em {
+    color: $green;
+    font-weight: 600;
+  }
+
+  mark {
+     color: $green;
+     background-color: rgba($color: $yellow, $alpha: 0.4);
+     padding: 5px;
+  }
+}
+
+.post-title{
+  font-size: calc(2rem + 3vw);
+  line-height: 0.8;
+  background: linear-gradient(transparent 30%, $white 20%) no-repeat;
+  margin-bottom: -10px;
+  padding-left: 20px;
+  height: 100%;
+}
+
+
+.post-image {
+  width: 250px;
+}

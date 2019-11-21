@@ -1,0 +1,54 @@
+<section id="praises" class="py-6">
+
+  <div class="praises carousel carousel-slide" id="praise-carousel" data-ride="carousel" data-interval="false">
+
+  <div class="slider-nav">
+    <a href="#praise-carousel" role="button" data-slide="prev" id="the-previous-one"  >
+      <div data-analytics-action="slider" data-analytics-label="previous">PREVIOUS
+        <div id="horizontal-line-left"></div><div class="arrow-right" id="previous-arrow"></div>
+         ONE
+     </div>
+    </a>
+  </div>
+
+  <div class="praise mb-4">
+    <h4>{{'Recent praises' | upcase }}</h4>
+
+    <div class="carousel-inner">
+      <div class="card-praise-align">
+        {%for praise in site.data.praises%}
+        {% if forloop.first %}{% assign active = 'active visible' %}
+        {% else %}{% assign active = '' %}
+        {% endif %}
+        <div class="card-praise card-custom carousel-item {{active}}">
+          <div class="card-praise-header">
+            <div>{{ praise.en.service }}</div>
+          </div>
+            <div class="card-praise-body">
+              <!-- <div> -->
+                <div class="praise-praiser"> <!-- colonne -->
+                  <img src="/assets/{{praise.picture}}" alt="{{praise.name}}">
+                  <div class="card-praise-signature mt-3">
+                    <strong class="praise-name">{{praise.name}}</strong>, {{praise.en.role}}, {{praise.en.company}}
+                  </div>
+                </div>
+              <!-- </div> -->
+            <div class="card-praise-text">{{praise.en.text}}</div>
+          </div>
+        </div>
+        {%endfor%}
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="slider-nav" id="another-one">
+    <a href="#praise-carousel" role="button" data-slide="next">
+        <div data-analytics-action="slider" data-analytics-label="next">ANOTHER
+          <div id="horizontal-line-right"></div><div class="arrow-right" id="next-arrow"></div>
+        ONE</div>
+    </a>
+  </div>
+  </div>
+</section>
