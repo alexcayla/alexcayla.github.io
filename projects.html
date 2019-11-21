@@ -9,17 +9,16 @@ layout: category
   {% assign projects = site.projects | sort: 'order'%}
   {% for project in projects %}
 
-    <div class="custom-card card-project">
+  <a href="{{project.url}}" class="card">
+    <div class="card-custom card-project">
       <div class="card-deliverable-header">
-        <h2>
-          <a href="{{project.url}}" class="card-heading">{{ project.name }}</a>
-        </h2>
+        <h2 class="card-custom-heading">{{ project.name }}</h2>
       </div>
-
       <div class="card-deliverable-body">
-          <div>{{project.description}}</div>
+          {{project.description}}
       </div>
     </div>
+  </a>
 
 {%endfor%}
 

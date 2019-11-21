@@ -6,6 +6,8 @@ order: 3
 
 Development is quite straightforward: I build your app. 
 
-But, before starting to code, I like to lay a good foundation by defining the product requirements, the data model and the app's major components. I also follow continuous deployment best practices and document decisions as I go to the best of my abilities. 
+I like to lay down a good foundation before starting to code. I start by defining the product requirements, the data model and the app's major components. 
 
-As a result, in addition to the code and app, you get documents that allow you continue to build and grow your product. 
+I also follow continuous deployment best practices and document decisions as I go. 
+
+As a result, in addition to the code and app, you get everything you need to continue to build and grow your product. 

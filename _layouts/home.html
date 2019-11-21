@@ -32,10 +32,22 @@
 
 <section id="services-dev" class="container-fluid services">
   <div class="container">
+      {{site.services | where: 'name', 'dev-intro'}}
+
+  </div>
+
+      <div class="quote-huge">
+        <div id="measure-twice">MEASURE</div>
+        <div id="twice-once">TWICE,</div>
+        <div id="twice-twice">TWICE,</div>
+        <div id="cut"></div>
+        <div id="cut-once">cut once</div>
+      </div>
+
+
+  <div class="container">
 
     <!-- <div class="row"> -->
-
-      {{site.services | where: 'name', 'dev-intro'}}
 
       {% assign development_services = site.services | where: 'category', 'development' | sort: 'order'%}
 
@@ -44,83 +56,42 @@
 
         <p>{{service.content}}</p>
 
-        <h4>{{ 'What you get' | upcase }}</h4>
-        {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
+        <div class="delib-toggle">
 
-        <div class="delibs mb-4">
-
-          {% for deliverable in deliverables%}
-            <div class="custom-card card-deliverable">
-              <div class="card-deliverable-header">
-                <h5 class="card-heading">{{deliverable.name | capitalize}}</h5>
-              </div>
-              <div class="card-deliverable-body">
-                <div>{{deliverable.description}}</div>
-              </div>
-            </div>
-          {%endfor%}
-
-        </div>
-
-      {% endfor%}
-  </div>
-</section>
+          <input type="checkbox" value="selected" id="d-delibs-{{forloop.index}}" class="toggle-input" data-analytics-action="services-toggle" data-analytics-label="{{service.name}}-delibs">
+          <label for="d-delibs-{{forloop.index}}" class="toggle-label">
+            <h4>
+              <span>
+                {{ 'What I do' | upcase }}
+              </span>
+            </h4>
+          </label>
 
 
-<!-- Praises -->
+          {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
 
-<section id="praises" class="py-6">
-  <div class="praises carousel carousel-slide" id="praise-carousel" data-ride="carousel" data-interval="false">
+          <div role="toggle" class="delibs mb-4 toggle-content" >
 
-  <div class="slider-nav" id="the-previous-one">
-    <a href="#praise-carousel" role="button" data-slide="next">
-      <div>A
-        <div id="horizontal-line-left"></div><div class="arrow-right" id="previous-arrow"></div>
-        PREVIOUS ONE
-     </div>
-    </a>
-  </div>
-
-  <div class="praise mb-4">
-    <h4>{{'Recent praises' | upcase }}</h4>
-
-    <div class="carousel-inner">
-      {%for praise in site.data.praises%}
-      {% if forloop.first %}{% assign active = 'active visible' %}
-      {% else %}{% assign active = '' %}
-      {% endif %}
-      <div class="custom-card card-praise carousel-item {{active}}">
-        <div class="card-praise-header">
-          <div>{{ praise.en.service }}</div>
-        </div>
-          <div class="card-praise-body">
-            <!-- <div> -->
-              <div class="praise-praiser"> <!-- colonne -->
-                <div class="card-praise-picture"><img src="/assets/{{praise.picture}}" alt="{{praise.name}}"></div>
-                <div class="card-praise-signature mt-3">
-                  <strong class="praise-name">{{praise.name}}</strong>, {{praise.en.role}}, {{praise.en.company}}
+            {% for deliverable in deliverables%}
+              <div class="card-custom card-deliverable">
+                <div class="card-deliverable-header">
+                  <h5 class="card-custom-heading">{{deliverable.name | capitalize}}</h5>
+                </div>
+                <div class="card-deliverable-body">
+                  <div>{{deliverable.description}}</div>
                 </div>
               </div>
-            <!-- </div> -->
-          <div class="card-praise-text">{{praise.en.text}}</div>
+            {%endfor%}
+
+          </div>
         </div>
-      </div>
-      {%endfor%}
-    </div>
+      {% endfor%}
   </div>
 
-
-
-  <div class="slider-nav" id="another-one">
-    <a href="#praise-carousel" role="button" data-slide="next">
-        <div>ANOTHER
-          <div id="horizontal-line-right"></div><div class="arrow-right" id="next-arrow"></div>
-        ONE</div>
-    </a>
-  </div>
-  </div>
 </section>
 
+
+{% include praises.html%}
 
 
 <!-- Product growth -->
@@ -145,15 +116,25 @@
 
         <p>{{service.content}}</p>
 
-        <h4>{{ 'What you get' | upcase }}</h4>
+        <div class="delib-toggle">
+
+        <input type="checkbox" value="selected" id="g-delibs-{{forloop.index}}" class="toggle-input" data-analytics-action="services-toggle" data-analytics-label="{{service.name}}-delibs">
+          <label for="g-delibs-{{forloop.index}}" class="toggle-label">
+            <h4>
+              <span>
+                {{ 'What I do' | upcase }}
+              </span>
+            </h4>
+          </label>
+
         {% assign deliverables = site.deliverables | where: 'services', service.name | sort: 'order' %}
 
-        <div class="delibs mb-4">
+        <div class="delibs mb-4 toggle-content">
 
           {% for deliverable in deliverables%}
-            <div class="custom-card card-deliverable">
+            <div class="card-custom card-deliverable">
               <div class="card-deliverable-header">
-                <h5 class="card-heading">{{deliverable.name | capitalize}}</h5>
+                <h5 class="card-custom-heading">{{deliverable.name | capitalize}}</h5>
               </div>
               <div class="card-deliverable-body">
                 <div>{{deliverable.description}}</div>
@@ -163,6 +144,7 @@
 
         </div>
 
+      </div>
       {% endfor%}
 
   </div>
@@ -173,7 +155,7 @@
   <div class="cta">
     <p class="ready">Ready?</p>
     <div>
-      <a href="/contact" class="btn btn-custom px-4">Get in touch</a>
+      <a href="/contact" class="btn btn-custom px-4" data-analytics-action="get-in-touch" data-analytics-label="footer">Get in touch</a>
     </div>
   </div>
 

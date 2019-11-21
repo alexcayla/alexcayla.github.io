@@ -4,9 +4,8 @@ category: development
 order: 2
 ---
 
-Design is not how something looks, but how it works. 
+Design is not how something looks, it's how it works. 
 
-This means knowing _who_ you are targeting, _what_ these users want and _how_ you expect them to get value out of your product; and then creating it.  
+This means knowing _what_ users want and _how_ they will get value out of your product, before creating it.  
 
-To that end, I can help clarify who the product is targeting, what they are trying to accomplish, map out the core flows of an app, create high levels mockups and refine the experience until we find a minimum lovable product. 
-
+If you are unsure, I can help answer these questions and provide everything you will need to create and grow your minimum lovable product. 

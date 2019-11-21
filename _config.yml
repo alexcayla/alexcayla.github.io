@@ -33,3 +33,8 @@ collections:
 
 exclude: []
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/social.png

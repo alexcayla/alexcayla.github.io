@@ -9,87 +9,52 @@ languages:
     - HTML & CSS
 frameworks:
     - React Native
+website:
+    - www.lampli.ca/tincan
 ---
 
 Record remote interviews, without compromises.
 
 ## The problem
-The main *persona* using tincan is either a podcaster, a journalist or a product manager. In short, someone that wants to record conversations to get new insights *and* that wants to share the result with others. 
+The main *persona* using tincan is either a podcaster, a journalist or a product manager. In short, someone who wants to record conversations, find new insights *and* share the result with others. 
 
-Tools such as Skype, Hangouts or Zoom make it easy to speak with people and record conversations. However, they are not ideal: typically, the audio quality of these conversations is not great and they don't offer a simple way to group conversations. 
+Tools such as Skype, Hangouts or Zoom make it easy to speak with people and record conversations. However, they are not ideal: typically, the audio quality of these conversations is not great (they have that distinct "conversation over the Internet" sound) and they don't offer a simple way to group conversations. 
+
+Podcasters and radio-journalists typically solve this problem by doing *two-end recording*. In short, each participant records the best possible version on their device and then share it to someone that will stich it together *"in post"*. 
+
+Obviously, this solution does not scale when dealing with a large number of guests or invitess. 
 
 ## The idea
 
-Invitees are partly to blame for the poor audio quality: often, they will use earbuds in a room with a lot of echo. But, services like Skype are also to blame as they will compress the audio too much, introducing artefacts and giving them that distinct "conversation over the Internet" sound. 
-
-*Tincan* wants to solve this problem by relying on a technique commonly used by podcasters and radios – *two-end recording* – but packaged in an app, so that "low tech" guests can don't have to think about it. 
-
-Recordings in *Tincan* are also grouped in topics so that multiple conversations stay organized together. 
+*Tincan* wants to solve both of these problems by packaging *two-end recording*in an app, so that "low tech" guests can don't have to think about it. And, organizing conversations in topics so that related conversations stay organized together.  
 
 ## The app
 
-The idea behind "two-end" recording is quite simple: record the best version possible on your devise and have someone stich them together in "post-production". 
+The app was designed to be as simple as possible around two clear storues: 
 
-The app has three main flows: 
+1. As a organizer, I want to create a conversation and invite guests
+2. As a guest, I want to join a conversation
 
-1. Create a new topic 
-2. Start and record a conversation
-2. Playback conversations and export
+***That's it***. Uploading, levelling and stitching are all done automatically. 
 
-
-Safari can now access the microphone. If I'm using 
-
-What does it do? 
-
-![new project](/assets/pictures/tincan/tincan-new-project.png){:.post-image}
-![recording](/assets/pictures/tincan/tincan-recording.png){:.post-image}
-![playback](/assets/pictures/tincan/tincan-playback.png){:.post-image}
-
-The idea behind tincan was twofold: 
-
-1. Make recording conversations as easy as making a call, while having the best possible audio quality. 
-2. Group related conversations together 
-
-
-
-
-|THE TINCAN MAIN FLOW?|
-
-<!-- What is two-end recording? -->
-
-
-
-
-However, invitees will usually have a 
-
-
-multiple people, being in the same room is often difficult. As a result
-
-researching a topic or discussing with multiple people in 
-
-both for one-to-one a
-
-
+And, when the organizer is ready to produce and episode, listen back, annotate or share, the recordings can be accessed through the app or exported to the drive of their choice, as individual tracks or together. 
 
 ## Challenges
-There were quite a few challenges that were 
+While Apple allows iPhones to record conversations, it does not allow *phone calls* to be recorded. This is the reason why most "call recording apps" call a third number where the conversation is recorded. To sidestep this issue and be able to record conversations, we had to create VOIP calls between all participants. 
 
+This turned out to be the most challenging part of the development. The documentation for the library was poor and inaccurate, it made use of undocumented APIs in Swift and Objective-C. 
 
+To compound this issue, we had decided to develop the app natively, in Swift, although no one in the team was familiar with the language or the tools. 
 
-What started as a simple weekend project morphed into something mu
-
-iOS restrictions
-Need to create VOIP service and record locally
-Working with different levels
-
+Ultimately, after struggling with the technologies and frameworks that were supposed to help us decrease our time to market, we stopped developing our own VOIP solution, relied on an external service to route and record calls and used React Native instead of Swift to develop the first app. 
 
 ## Vision and next steps
 
-Automatic transcription
-Annotations (feedback) share finised product, etc. 
-Automatic exports
-DAW (Digital Audio Workstation) integration
-Automatic audio mastering
-In browser
+Tincan is currently in alpha, betas invites are expected to be sent in January 2020. Based on the uptake by the market, there are a couple of features that could be developed: 
+
+* Automatic transcriptions to simplyfing analysis and search
+* In browser "app-less" recording flow (as a progressive web app)
+* Annotations and feedback on the finised product (send to past guests)
+* DAW (Digital Audio Workstation) integration
 
 

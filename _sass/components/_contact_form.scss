@@ -1,0 +1,33 @@
+@import './fonts';
+
+.form-contact {
+  background-color: $green;
+  border-radius: 3px;
+  padding: 25px;
+  label {
+    color: $light;
+    font-family: $heading-font;
+    font-size: 1.25rem !important;
+    line-height: 1;
+  }
+}
+
+.contact-text {
+  margin-right: 3rem;
+}
+
+.ready{
+  font-size: calc(2rem + 25vw);
+  font-family: $secondary-heading-font;
+}
+
+
+form > button {
+  justify-content: flex-end;
+}
+
+#doit {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
