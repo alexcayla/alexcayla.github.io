@@ -22,7 +22,11 @@
 
 .post-title{
   font-size: calc(2rem + 3vw);
-  line-height: 0.5;
+  line-height: 0.8;
+  background: linear-gradient(transparent 30%, $white 20%) no-repeat;
+  margin-bottom: -10px;
+  padding-left: 20px;
+  height: 100%;
 }
 
 

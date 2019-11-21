@@ -1,5 +1,6 @@
 ---
 name: Tincan
+tagline: Record remote interviews, without compromises.
 description: Tincan is a remote recording tool that allows podcasters to record phone conversations that don't sound like phone calls. 
 order: 3
 type: product
@@ -10,7 +11,7 @@ languages:
 frameworks:
     - React Native
 website:
-    - www.lampli.ca/tincan
+    - https://www.lampli.ca/tincan
 ---
 
 Record remote interviews, without compromises.
@@ -56,5 +57,10 @@ Tincan is currently in alpha, betas invites are expected to be sent in January 2
 * In browser "app-less" recording flow (as a progressive web app)
 * Annotations and feedback on the finised product (send to past guests)
 * DAW (Digital Audio Workstation) integration
+
+<!-- ### Lear more about tincan
+<mark>Website:</mark> <a href="{{page.website}}">Tincan - Remote recording without compromises</a> -->
+
+
 
 

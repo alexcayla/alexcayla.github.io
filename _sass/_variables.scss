@@ -52,7 +52,7 @@ mark{
 
 .logo-header {
   display: grid;
-  width: 100vw;
+  width: 100%;
   justify-items: center;
   overflow: hidden;
   background: linear-gradient(#0e5f4c 80%, transparent 20%) no-repeat;
@@ -276,7 +276,7 @@ mark{
 // QUOTES
 
   .quote-huge {
-    width: 100vw;
+    width: 100%;
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -356,4 +356,39 @@ body {
 
 #custom-field {
   display:none;
+}
+
+.post-cta {
+  padding: 2rem;
+  h3 {
+    font-size: calc(3rem + 3vw);
+    line-height: 0.8;
+  }
+  @media screen and (min-width: 375px) {
+    h3 {
+    font-size: calc(2.5rem + 3vw);
+    }
+  }
+
+  @media screen and (min-width: 970px) {
+    a {
+      margin-top: -3rem;
+    }
+  }
+}
+
+.outbound-link-box {
+  padding: 4rem;
+}
+
+.learn-more-div{
+  padding: 0 2rem 1rem 2rem;
+  background-color: $white;
+  p{
+    font-size: 1.75rem;
+    font-family: $medium-condensed;
+    a {
+      font-family: $nav-font;
+    }
+  }
 }

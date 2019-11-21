@@ -1,0 +1,14 @@
+{% if page.website%}
+
+<div class="container">
+    <div class="learn-more-div">
+        <h3>Learn more about {{page.name}}</h3>
+        <p><img src="/assets/arrow.svg" alt="right arrow">
+            Website: <mark>
+            <a href="{{page.website}}">{{page.name | capitalize }} - {{page.tagline}}</a></mark>
+        </p>
+    </div>
+    
+</div>
+
+{%endif%}
