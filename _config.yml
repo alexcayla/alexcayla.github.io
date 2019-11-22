@@ -33,6 +33,13 @@ collections:
 
 exclude: []
 
+author:
+  twitter:          "alexcayla"
+twitter:
+  card:             ""
+  username:         "alexcayla"
+logo: 
+
 defaults:
   - scope:
       path: ""
