@@ -7,9 +7,16 @@
   padding: 1rem;
   font-size: $custom-font-size;
   padding: 2rem;
+  // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.35px;
 
   em {
     color: $green;
+    font-weight: 600;
+  }
+
+  a{
+    text-decoration: underline;
     font-weight: 600;
   }
 
